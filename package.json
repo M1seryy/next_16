@@ -29,7 +29,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "drizzle-orm": "^0.44.6",
-    "ky": "^1.10.0",
+    "ky": "^1.13.0",
     "lucide-react": "^0.546.0",
     "next": "16.0.0",
     "next-intl": "^4.3.4",

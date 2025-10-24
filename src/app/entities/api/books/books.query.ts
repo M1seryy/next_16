@@ -1,27 +1,16 @@
 import { useQuery } from '@tanstack/react-query'
-import { booksApi } from './books.api'
+import { booksQueryApi } from './books.api'
 
 // Query keys
-export const booksKeys = {
-    all: ['books'] as const,
-    lists: () => [...booksKeys.all, 'list'] as const,
-    list: (searchQuery?: string) => [...booksKeys.lists(), { searchQuery }] as const,
-    details: () => [...booksKeys.all, 'detail'] as const,
-    detail: (id: number) => [...booksKeys.details(), id] as const,
+export const booksQueryKeys = {
+    all: ['books'],
+    search: (searchQuery?: string) => [...booksQueryKeys.all, 'search', searchQuery],
 }
 
 // Hooks
 export const useBooksQuery = (searchQuery?: string) => {
     return useQuery({
-        queryKey: booksKeys.list(searchQuery),
-        queryFn: () => booksApi.getAll(searchQuery),
-    })
-}
-
-export const useBookQuery = (id: number) => {
-    return useQuery({
-        queryKey: booksKeys.detail(id),
-        queryFn: () => booksApi.getById(id),
-        enabled: !!id,
+        queryKey: booksQueryKeys.search(searchQuery),
+        queryFn: (opt) => booksQueryApi(opt, { search: searchQuery }),
     })
 }

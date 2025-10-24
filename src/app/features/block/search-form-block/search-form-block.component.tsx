@@ -42,8 +42,6 @@ const SearchFormBlockComponent: FC<Readonly<IProps>> = (props) => {
             control={form.control}
             name='query'
             rules={{
-              required: 'Search query is required',
-              minLength: { value: 1, message: 'Query too short' },
               maxLength: { value: 100, message: 'Query too long' },
             }}
             render={({ field }) => (

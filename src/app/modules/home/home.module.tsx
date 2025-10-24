@@ -1,5 +1,6 @@
 'use client'
-import { type FC } from 'react'
+
+import { type FC, useState } from 'react'
 import { BooksListBlockComponent, SearchFormBlockComponent } from '@/app/features/block'
 import { BannerComponent } from '@/app/shared/ui'
 import { useTranslations } from 'next-intl'
@@ -11,9 +12,14 @@ interface IProps {
 
 // component
 const HomeModule: FC<Readonly<IProps>> = (props) => {
-  const { searchQuery = '' } = props
+  const { searchQuery: initialSearchQuery = '' } = props
+  const [searchQuery, setSearchQuery] = useState(initialSearchQuery)
 
   const t = useTranslations()
+
+  const handleSearch = (query: string) => {
+    setSearchQuery(query)
+  }
 
   // return
   return (
@@ -25,15 +31,10 @@ const HomeModule: FC<Readonly<IProps>> = (props) => {
       </div>
 
       <div className='flex justify-center'>
-        <SearchFormBlockComponent
-          onSearch={(query) => {
-            console.log('Search query:', query)
-          }}
-          initialValue={searchQuery}
-        />
+        <SearchFormBlockComponent onSearch={handleSearch} initialValue={searchQuery} />
       </div>
 
-      <BooksListBlockComponent />
+      <BooksListBlockComponent searchQuery={searchQuery} />
     </div>
   )
 }

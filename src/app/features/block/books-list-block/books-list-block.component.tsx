@@ -1,8 +1,7 @@
 'use client'
 
 import { type FC } from 'react'
-import { useQuery } from '@tanstack/react-query'
-import { booksApi } from '@/app/entities/api/books/books.api'
+import { useBooksQuery } from '@/app/entities/api/books/books.query'
 
 // interface
 interface IProps {
@@ -13,14 +12,7 @@ interface IProps {
 const BooksListBlockComponent: FC<Readonly<IProps>> = (props) => {
   const { searchQuery = '' } = props
 
-  const {
-    data: books,
-    isLoading,
-    error,
-  } = useQuery({
-    queryKey: ['books', searchQuery],
-    queryFn: () => booksApi.getAll(searchQuery),
-  })
+  const { data: books, isLoading, error } = useBooksQuery(searchQuery)
 
   if (isLoading) {
     return (
