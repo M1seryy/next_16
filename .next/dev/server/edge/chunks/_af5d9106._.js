@@ -11675,7 +11675,7 @@ function hasPathnamePrefixed(prefix, pathname) {
 function hasTrailingSlash() {
     try {
         // Provided via `env` setting in `next.config.js` via the plugin
-        return process.env._next_intl_trailing_slash === 'true';
+        return ("TURBOPACK compile-time value", "true") === 'true';
     } catch  {
         return false;
     }

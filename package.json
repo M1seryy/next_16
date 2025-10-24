@@ -12,6 +12,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "export": "next build && next export",
     "db:push": "drizzle-kit push",
     "db:generate": "drizzle-kit generate",
     "db:studio": "drizzle-kit studio",
