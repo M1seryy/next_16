@@ -2,14 +2,5 @@
   "framework": "nextjs",
   "buildCommand": "yarn build",
   "devCommand": "yarn dev",
-  "installCommand": "yarn install",
-  "regions": ["iad1"],
-  "functions": {
-    "src/app/api/**/*.ts": {
-      "runtime": "nodejs20.x"
-    }
-  },
-  "env": {
-    "NODE_ENV": "production"
-  }
+  "installCommand": "yarn install"
 }
