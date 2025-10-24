@@ -7,7 +7,6 @@ import { eq } from 'drizzle-orm'
 
 export async function GET(request: NextRequest) {
     try {
-        // Get session from Better Auth
         const session = await auth.api.getSession({
             headers: request.headers,
         })
@@ -16,7 +15,6 @@ export async function GET(request: NextRequest) {
             return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
         }
 
-        // Get full user data from database
         const userData = await db
             .select()
             .from(users)
