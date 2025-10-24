@@ -29,8 +29,9 @@ const nextConfig: NextConfig = {
         ],
     },
 
+    reactCompiler: true,
+
     experimental: {
-        reactCompiler: true,
         optimizeServerReact: true,
         optimizePackageImports: [
             '@tanstack/react-query',
