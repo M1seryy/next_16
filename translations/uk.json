@@ -3,6 +3,19 @@
     "title": "Ласкаво просимо до вашого нового проєкту!",
     "description": "Новий проєкт з Next.js 16, Supabase, shadcn/ui та Better Auth"
   },
+  "Header": {
+    "title": "Next.js 16 App",
+    "home": "Головна"
+  },
+  "Footer": {
+    "copyright": "© 2024 Next.js 16 App. Всі права захищені."
+  },
+  "NotFound": {
+    "title": "Сторінку не знайдено",
+    "description": "Сторінка, яку ви шукаєте, не існує або була переміщена.",
+    "goHome": "На головну",
+    "goBack": "Повернутися"
+  },
   "TechStack": {
     "nextjs": {
       "title": "Next.js 16",

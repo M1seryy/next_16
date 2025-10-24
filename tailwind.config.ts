@@ -31,7 +31,7 @@ const config: Config = {
                     muted: '#454F69',
                 },
                 link: '#1D63F0',
-            }
+            },
         }
     },
     darkMode: 'class',

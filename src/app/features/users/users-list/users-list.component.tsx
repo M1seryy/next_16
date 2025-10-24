@@ -1,5 +1,4 @@
 import { type FC } from 'react'
-import { usersApi } from '@/app/entities/api/users'
 
 // interface
 interface IProps {
@@ -7,8 +6,12 @@ interface IProps {
 }
 
 // component
-const UsersListComponent: FC<Readonly<IProps>> = async () => {
-  const users = await usersApi.getAll()
+const UsersListComponent: FC<Readonly<IProps>> = () => {
+  // Mock data for now
+  const users = [
+    { id: 1, name: 'John Doe', email: 'john@example.com', createdAt: new Date() },
+    { id: 2, name: 'Jane Smith', email: 'jane@example.com', createdAt: new Date() },
+  ]
 
   // return
   return (
@@ -22,7 +25,7 @@ const UsersListComponent: FC<Readonly<IProps>> = async () => {
           {users.map((user) => (
             <div key={user.id} className='rounded-lg border p-4'>
               <h3 className='font-medium'>{user.name}</h3>
-              <p className='text-sm text-gray-600'>{user.email}</p>
+              <p className='text-sm text-red-600'>{user.email}</p>
               <p className='text-xs text-gray-400'>Created: {new Date(user.createdAt).toLocaleDateString()}</p>
             </div>
           ))}

@@ -15,10 +15,12 @@ const HomeModule: FC<Readonly<IProps>> = async (props) => {
 
   // return
   return (
-    <div className='space-y-6'>
-      <h1 className='text-2xl font-bold'>Home</h1>
+    <div className='container mx-auto px-4 py-8'>
+      <div className='space-y-6'>
+        <h1 className='text-2xl'>Home</h1>
 
-      <UsersListComponent />
+        <UsersListComponent />
+      </div>
     </div>
   )
 }

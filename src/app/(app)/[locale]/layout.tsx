@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { hasLocale } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
 import { routing } from '@/pkg/libraries/locale'
+import { LayoutModule } from '@/app/modules/layout'
 
 import { notFound } from 'next/navigation'
 
@@ -55,11 +56,12 @@ const LocaleLayout: FC<Readonly<IProps>> = async (props) => {
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <LayoutModule>{children}</LayoutModule>
+        </NextIntlClientProvider>
       </body>
     </html>
   )
 }
 
 export default LocaleLayout
-

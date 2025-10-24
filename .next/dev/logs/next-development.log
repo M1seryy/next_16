@@ -1,2 +1,615 @@
-[00:00:01.103] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:01.208] Server  LOG      ✓ Ready in 977ms
+[00:00:00.874] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:00.967] Server  LOG      ✓ Ready in 726ms
+[00:00:02.050] Server  ERROR    ⨯ ./src/config/styles/global.css:1:2
+Module not found: Can't resolve 'tailwindcss/base'
+> 1 | @import 'tailwindcss/base';
+    |  ^
+  2 | @import 'tailwindcss/components';
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./src/config/styles/global.css:2:2
+Module not found: Can't resolve 'tailwindcss/components'
+  1 | @import 'tailwindcss/base';
+> 2 | @import 'tailwindcss/components';
+    |  ^
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:02.918] Browser ERROR   uncaughtError: Error: ./src/config/styles/global.css:1:2
+Module not found: Can't resolve 'tailwindcss/base'
+> 1 | @import 'tailwindcss/base';
+    |  ^
+  2 | @import 'tailwindcss/components';
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:03.149] Browser ERROR   ./src/config/styles/global.css:1:2
+Module not found: Can't resolve 'tailwindcss/base'
+> 1 | @import 'tailwindcss/base';
+    |  ^
+  2 | @import 'tailwindcss/components';
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:03.149] Browser ERROR   ./src/config/styles/global.css:2:2
+Module not found: Can't resolve 'tailwindcss/components'
+  1 | @import 'tailwindcss/base';
+> 2 | @import 'tailwindcss/components';
+    |  ^
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:03.340] Browser ERROR   ./src/config/styles/global.css:1:2
+Module not found: Can't resolve 'tailwindcss/base'
+> 1 | @import 'tailwindcss/base';
+    |  ^
+  2 | @import 'tailwindcss/components';
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:03.340] Browser ERROR   ./src/config/styles/global.css:2:2
+Module not found: Can't resolve 'tailwindcss/components'
+  1 | @import 'tailwindcss/base';
+> 2 | @import 'tailwindcss/components';
+    |  ^
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:03.701] Server  ERROR    ⨯ ./src/config/styles/global.css:1:2
+Module not found: Can't resolve 'tailwindcss/base'
+> 1 | @import 'tailwindcss/base';
+    |  ^
+  2 | @import 'tailwindcss/components';
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./src/config/styles/global.css:2:2
+Module not found: Can't resolve 'tailwindcss/components'
+  1 | @import 'tailwindcss/base';
+> 2 | @import 'tailwindcss/components';
+    |  ^
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:03.832] Browser ERROR   uncaughtError: Error: ./src/config/styles/global.css:1:2
+Module not found: Can't resolve 'tailwindcss/base'
+> 1 | @import 'tailwindcss/base';
+    |  ^
+  2 | @import 'tailwindcss/components';
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:03.980] Browser ERROR   ./src/config/styles/global.css:1:2
+Module not found: Can't resolve 'tailwindcss/base'
+> 1 | @import 'tailwindcss/base';
+    |  ^
+  2 | @import 'tailwindcss/components';
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:03.980] Browser ERROR   ./src/config/styles/global.css:2:2
+Module not found: Can't resolve 'tailwindcss/components'
+  1 | @import 'tailwindcss/base';
+> 2 | @import 'tailwindcss/components';
+    |  ^
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:03.980] Browser ERROR   ./src/config/styles/global.css:1:2
+Module not found: Can't resolve 'tailwindcss/base'
+> 1 | @import 'tailwindcss/base';
+    |  ^
+  2 | @import 'tailwindcss/components';
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:03.980] Browser ERROR   ./src/config/styles/global.css:2:2
+Module not found: Can't resolve 'tailwindcss/components'
+  1 | @import 'tailwindcss/base';
+> 2 | @import 'tailwindcss/components';
+    |  ^
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:04.593] Browser ERROR   ./src/config/styles/global.css:1:2
+Module not found: Can't resolve 'tailwindcss/base'
+> 1 | @import 'tailwindcss/base';
+    |  ^
+  2 | @import 'tailwindcss/components';
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:04.594] Browser ERROR   ./src/config/styles/global.css:2:2
+Module not found: Can't resolve 'tailwindcss/components'
+  1 | @import 'tailwindcss/base';
+> 2 | @import 'tailwindcss/components';
+    |  ^
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:11.369] Server  ERROR    ⨯ ./src/config/styles/global.css:1:2
+Module not found: Can't resolve 'tailwindcss/base'
+> 1 | @import 'tailwindcss/base';
+    |  ^
+  2 | @import 'tailwindcss/components';
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./src/config/styles/global.css:2:2
+Module not found: Can't resolve 'tailwindcss/components'
+  1 | @import 'tailwindcss/base';
+> 2 | @import 'tailwindcss/components';
+    |  ^
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:11.489] Browser ERROR   uncaughtError: Error: ./src/config/styles/global.css:1:2
+Module not found: Can't resolve 'tailwindcss/base'
+> 1 | @import 'tailwindcss/base';
+    |  ^
+  2 | @import 'tailwindcss/components';
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:11.632] Browser ERROR   ./src/config/styles/global.css:1:2
+Module not found: Can't resolve 'tailwindcss/base'
+> 1 | @import 'tailwindcss/base';
+    |  ^
+  2 | @import 'tailwindcss/components';
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:11.632] Browser ERROR   ./src/config/styles/global.css:2:2
+Module not found: Can't resolve 'tailwindcss/components'
+  1 | @import 'tailwindcss/base';
+> 2 | @import 'tailwindcss/components';
+    |  ^
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:11.632] Browser ERROR   ./src/config/styles/global.css:1:2
+Module not found: Can't resolve 'tailwindcss/base'
+> 1 | @import 'tailwindcss/base';
+    |  ^
+  2 | @import 'tailwindcss/components';
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:11.632] Browser ERROR   ./src/config/styles/global.css:2:2
+Module not found: Can't resolve 'tailwindcss/components'
+  1 | @import 'tailwindcss/base';
+> 2 | @import 'tailwindcss/components';
+    |  ^
+  3 | @import 'tailwindcss/utilities';
+  4 |
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:34.478] Server  LOG      ✓ Compiled in 55ms
+[00:00:35.613] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:39.070] Server  LOG      ✓ Compiled in 769ms
+[00:00:39.173] Browser ERROR   ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: Failed to load external module file:///Users/victorhachkajlo/Desktop/new-project/postcss.config.js: ReferenceError: module is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/victorhachkajlo/Desktop/new-project/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    [at Context.externalImport (turbopack:///[turbopack]/shared-node/base-externals-utils.ts:16:11)]
+    [at async <anonymous> (turbopack:///[project]/postcss.config.js_.loader.mjs:9:13)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+[00:00:41.568] Server  ERROR    ⨯ ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: Failed to load external module file:///Users/victorhachkajlo/Desktop/new-project/postcss.config.js: ReferenceError: module is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/victorhachkajlo/Desktop/new-project/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    [at Context.externalImport (turbopack:///[turbopack]/shared-node/base-externals-utils.ts:16:11)]
+    [at async <anonymous> (turbopack:///[project]/postcss.config.js_.loader.mjs:9:13)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+
+[00:00:41.570] Server  WARN     ⚠ ./postcss.config.js
+Specified module format (EcmaScript Modules) is not matching the module format of the source code (CommonJs)
+The EcmaScript module format was specified in the package.json that is affecting this source file or by using an special extension, but it looks like that CommonJs syntax is used in the source code.
+Exports made by CommonJs syntax will lead to a runtime error, since the module is in EcmaScript mode. Either change the "type" field in the package.json or replace CommonJs syntax with EcmaScript import/export syntax in the source file.
+
+
+[00:00:41.804] Server  WARN     ⚠ ./postcss.config.js
+Specified module format (EcmaScript Modules) is not matching the module format of the source code (CommonJs)
+The EcmaScript module format was specified in the package.json that is affecting this source file or by using an special extension, but it looks like that CommonJs syntax is used in the source code.
+Exports made by CommonJs syntax will lead to a runtime error, since the module is in EcmaScript mode. Either change the "type" field in the package.json or replace CommonJs syntax with EcmaScript import/export syntax in the source file.
+
+
+[00:00:41.814] Browser ERROR   uncaughtError: Error: ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: Failed to load external module file:///Users/victorhachkajlo/Desktop/new-project/postcss.config.js: ReferenceError: module is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/victorhachkajlo/Desktop/new-project/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    [at Context.externalImport (turbopack:///[turbopack]/shared-node/base-externals-utils.ts:16:11)]
+    [at async <anonymous> (turbopack:///[project]/postcss.config.js_.loader.mjs:9:13)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+
+[00:00:41.951] Browser ERROR   ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: Failed to load external module file:///Users/victorhachkajlo/Desktop/new-project/postcss.config.js: ReferenceError: module is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/victorhachkajlo/Desktop/new-project/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    [at Context.externalImport (turbopack:///[turbopack]/shared-node/base-externals-utils.ts:16:11)]
+    [at async <anonymous> (turbopack:///[project]/postcss.config.js_.loader.mjs:9:13)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+[00:00:41.951] Browser ERROR   ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: Failed to load external module file:///Users/victorhachkajlo/Desktop/new-project/postcss.config.js: ReferenceError: module is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/victorhachkajlo/Desktop/new-project/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    [at Context.externalImport (turbopack:///[turbopack]/shared-node/base-externals-utils.ts:16:11)]
+    [at async <anonymous> (turbopack:///[project]/postcss.config.js_.loader.mjs:9:13)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+[00:00:42.734] Server  ERROR    ⨯ ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: Failed to load external module file:///Users/victorhachkajlo/Desktop/new-project/postcss.config.js: ReferenceError: module is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/victorhachkajlo/Desktop/new-project/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    [at Context.externalImport (turbopack:///[turbopack]/shared-node/base-externals-utils.ts:16:11)]
+    [at async <anonymous> (turbopack:///[project]/postcss.config.js_.loader.mjs:9:13)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+
+[00:00:42.735] Server  WARN     ⚠ ./postcss.config.js
+Specified module format (EcmaScript Modules) is not matching the module format of the source code (CommonJs)
+The EcmaScript module format was specified in the package.json that is affecting this source file or by using an special extension, but it looks like that CommonJs syntax is used in the source code.
+Exports made by CommonJs syntax will lead to a runtime error, since the module is in EcmaScript mode. Either change the "type" field in the package.json or replace CommonJs syntax with EcmaScript import/export syntax in the source file.
+
+
+[00:00:42.951] Server  WARN     ⚠ ./postcss.config.js
+Specified module format (EcmaScript Modules) is not matching the module format of the source code (CommonJs)
+The EcmaScript module format was specified in the package.json that is affecting this source file or by using an special extension, but it looks like that CommonJs syntax is used in the source code.
+Exports made by CommonJs syntax will lead to a runtime error, since the module is in EcmaScript mode. Either change the "type" field in the package.json or replace CommonJs syntax with EcmaScript import/export syntax in the source file.
+
+
+[00:00:42.955] Browser ERROR   uncaughtError: Error: ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: Failed to load external module file:///Users/victorhachkajlo/Desktop/new-project/postcss.config.js: ReferenceError: module is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/victorhachkajlo/Desktop/new-project/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    [at Context.externalImport (turbopack:///[turbopack]/shared-node/base-externals-utils.ts:16:11)]
+    [at async <anonymous> (turbopack:///[project]/postcss.config.js_.loader.mjs:9:13)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+
+[00:00:43.095] Browser ERROR   ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: Failed to load external module file:///Users/victorhachkajlo/Desktop/new-project/postcss.config.js: ReferenceError: module is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/victorhachkajlo/Desktop/new-project/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    [at Context.externalImport (turbopack:///[turbopack]/shared-node/base-externals-utils.ts:16:11)]
+    [at async <anonymous> (turbopack:///[project]/postcss.config.js_.loader.mjs:9:13)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+[00:00:43.095] Browser ERROR   ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: Failed to load external module file:///Users/victorhachkajlo/Desktop/new-project/postcss.config.js: ReferenceError: module is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/victorhachkajlo/Desktop/new-project/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    [at Context.externalImport (turbopack:///[turbopack]/shared-node/base-externals-utils.ts:16:11)]
+    [at async <anonymous> (turbopack:///[project]/postcss.config.js_.loader.mjs:9:13)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+[00:00:54.322] Browser ERROR   ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: Failed to load external module file:///Users/victorhachkajlo/Desktop/new-project/postcss.config.js: ReferenceError: module is not defined in ES module scope
+This file is being treated as an ES module because it has a '.js' file extension and '/Users/victorhachkajlo/Desktop/new-project/package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    [at Context.externalImport (turbopack:///[turbopack]/shared-node/base-externals-utils.ts:16:11)]
+    [at async <anonymous> (turbopack:///[project]/postcss.config.js_.loader.mjs:9:13)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+[00:01:10.577] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:13.066] Server  LOG      ✓ Compiled in 238ms
+[00:01:13.176] Browser ERROR   ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at ot (/Users/victorhachkajlo/Desktop/new-project/node_modules/tailwindcss/dist/lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+[00:01:17.805] Server  ERROR    ⨯ ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at ot (/Users/victorhachkajlo/Desktop/new-project/node_modules/tailwindcss/dist/lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+
+[00:01:17.942] Browser ERROR   uncaughtError: Error: ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at ot (/Users/victorhachkajlo/Desktop/new-project/node_modules/tailwindcss/dist/lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+
+[00:01:18.094] Browser ERROR   ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at ot (/Users/victorhachkajlo/Desktop/new-project/node_modules/tailwindcss/dist/lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+[00:01:18.094] Browser ERROR   ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at ot (/Users/victorhachkajlo/Desktop/new-project/node_modules/tailwindcss/dist/lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+[00:01:21.232] Browser ERROR   ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at ot (/Users/victorhachkajlo/Desktop/new-project/node_modules/tailwindcss/dist/lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+[00:02:09.073] Browser ERROR   ./src/config/styles/global.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at ot (/Users/victorhachkajlo/Desktop/new-project/node_modules/tailwindcss/dist/lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+
+Import trace:
+  Client Component Browser:
+    ./src/config/styles/global.css [Client Component Browser]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+[00:02:13.588] Server  LOG      ✓ Compiled in 589ms
+[00:02:13.938] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:19.336] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
