@@ -1,7 +1,9 @@
 import createMiddleware from 'next-intl/middleware'
 import { routing } from './pkg/libraries/locale'
 
-export default createMiddleware(routing)
+const middleware = createMiddleware(routing)
+
+export default middleware
 
 export const config = {
   // Match only internationalized pathnames
