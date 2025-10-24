@@ -10,7 +10,7 @@ interface IProps {
 }
 
 // component
-const BooksListComponent: FC<Readonly<IProps>> = (props) => {
+const BooksListBlockComponent: FC<Readonly<IProps>> = (props) => {
   const { searchQuery = '' } = props
 
   const {
@@ -60,4 +60,4 @@ const BooksListComponent: FC<Readonly<IProps>> = (props) => {
   )
 }
 
-export default BooksListComponent
+export default BooksListBlockComponent

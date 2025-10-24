@@ -18,7 +18,7 @@ interface SearchFormData {
 }
 
 // component
-const SearchFormComponent: FC<Readonly<IProps>> = (props) => {
+const SearchFormBlockComponent: FC<Readonly<IProps>> = (props) => {
   const { onSearch, initialValue = '' } = props
 
   const t = useTranslations()
@@ -65,4 +65,4 @@ const SearchFormComponent: FC<Readonly<IProps>> = (props) => {
   )
 }
 
-export default SearchFormComponent
+export default SearchFormBlockComponent

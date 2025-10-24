@@ -1,7 +1,6 @@
 'use client'
 import { type FC } from 'react'
-import { BooksListComponent } from '@/app/features/books'
-import { SearchFormComponent } from '@/app/features/search'
+import { BooksListBlockComponent, SearchFormBlockComponent } from '@/app/features/block'
 import { BannerComponent } from '@/app/shared/ui'
 import { useTranslations } from 'next-intl'
 
@@ -26,7 +25,7 @@ const HomeModule: FC<Readonly<IProps>> = (props) => {
       </div>
 
       <div className='flex justify-center'>
-        <SearchFormComponent
+        <SearchFormBlockComponent
           onSearch={(query) => {
             console.log('Search query:', query)
           }}
@@ -34,7 +33,7 @@ const HomeModule: FC<Readonly<IProps>> = (props) => {
         />
       </div>
 
-      <BooksListComponent />
+      <BooksListBlockComponent />
     </div>
   )
 }

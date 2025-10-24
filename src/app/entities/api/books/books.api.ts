@@ -1,16 +1,15 @@
+// Books API functions
 export const booksApi = {
     getAll: async (searchQuery?: string) => {
-        const url = new URL('/api/books', window.location.origin)
-        if (searchQuery) {
-            url.searchParams.set('search', searchQuery)
-        }
+        const url = searchQuery
+            ? `/api/books?search=${encodeURIComponent(searchQuery)}`
+            : '/api/books'
 
-        const response = await fetch(url.toString())
+        const response = await fetch(url)
         if (!response.ok) {
             throw new Error('Failed to fetch books')
         }
-
-        return await response.json()
+        return response.json()
     },
 
     getById: async (id: number) => {
@@ -18,7 +17,6 @@ export const booksApi = {
         if (!response.ok) {
             throw new Error('Failed to fetch book')
         }
-
-        return await response.json()
-    },
+        return response.json()
+    }
 }

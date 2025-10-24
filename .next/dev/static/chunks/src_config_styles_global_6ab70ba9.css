@@ -380,6 +380,10 @@
     margin-bottom: calc(var(--spacing) * 3.5);
   }
 
+  .block {
+    display: block;
+  }
+
   .flex {
     display: flex;
   }
