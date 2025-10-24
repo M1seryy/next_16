@@ -65,17 +65,34 @@ yarn dev
 
 ## Deployment
 
-This project is configured for GitHub Pages deployment. The GitHub Actions workflow will automatically build and deploy the static site when you push to the main branch.
+This project is configured for Vercel deployment, which supports full-stack Next.js applications with API routes and server-side functionality.
+
+### Deploy to Vercel
+
+1. **Connect to Vercel:**
+   - Go to [vercel.com](https://vercel.com)
+   - Sign in with your GitHub account
+   - Import your repository
+
+2. **Configure Environment Variables:**
+   - Add your environment variables in Vercel dashboard
+   - `DATABASE_URL` - Your Supabase database URL
+   - `AUTH_SECRET` - Your authentication secret
+   - `GOOGLE_CLIENT_ID` - Your Google OAuth client ID
+   - `GOOGLE_CLIENT_SECRET` - Your Google OAuth client secret
+
+3. **Deploy:**
+   - Vercel will automatically deploy on every push to main branch
+   - Your app will be available at `https://your-project.vercel.app`
 
 ### Manual Deployment
 
-To build the static export manually:
+To build the project locally:
 
 ```bash
 yarn build
+yarn start
 ```
-
-The static files will be generated in the `out` directory.
 
 ## Project Structure
 

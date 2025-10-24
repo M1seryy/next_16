@@ -6,15 +6,13 @@ const withNextIntl = createNextIntlPlugin('./src/pkg/libraries/locale/request.ts
 
 // next config
 const nextConfig: NextConfig = {
-    output: 'export',
-    trailingSlash: true,
+    output: 'standalone',
     poweredByHeader: false,
     cacheMaxMemorySize: 100 * 1024 * 1024,
 
     logging: {},
 
     images: {
-        unoptimized: true,
         remotePatterns: [
             {
                 protocol: 'https',
