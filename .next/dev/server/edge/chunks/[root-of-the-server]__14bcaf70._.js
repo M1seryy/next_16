@@ -54,10 +54,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$l
 const middleware = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$middleware$2f$middleware$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$locale$2f$routing$2e$ts__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["routing"]);
 const __TURBOPACK__default__export__ = middleware;
 const config = {
-    // Match only internationalized pathnames
     matcher: [
-        '/',
-        '/(uk|en)/:path*'
+        '/((?!api|_next|.*\\..*).*)'
     ]
 };
 }),

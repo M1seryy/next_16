@@ -11,12 +11,8 @@
       "page": "/",
       "matchers": [
         {
-          "regexp": "/:nextData(_next/data/[^/]{1,})?/(/?index|/?index\\\\.json)?",
-          "originalSource": "/"
-        },
-        {
-          "regexp": "/:nextData(_next/data/[^/]{1,})?/(uk|en)/:path*{(\\\\.json)}?",
-          "originalSource": "/(uk|en)/:path*"
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/((?!api|_next|.*\\..*).*){(\\\\.json)}?",
+          "originalSource": "/((?!api|_next|.*\\..*).*)"
         }
       ],
       "wasm": [],

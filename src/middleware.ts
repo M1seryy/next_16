@@ -7,6 +7,5 @@ const middleware = createMiddleware(routing)
 export default middleware
 
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(uk|en)/:path*'],
+  matcher: ['/((?!api|_next|.*\\..*).*)']
 }
