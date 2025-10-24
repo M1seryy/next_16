@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/translations/en.json"],"sourcesContent":["{\"HomePage\":{\"title\":\"Welcome to your new project!\",\"description\":\"A new project with Next.js 16, Supabase, shadcn/ui, and Better Auth\"},\"TechStack\":{\"nextjs\":{\"title\":\"Next.js 16\",\"description\":\"Latest version of Next.js with App Router\"},\"supabase\":{\"title\":\"Supabase + Drizzle\",\"description\":\"Database with type-safe ORM\"},\"shadcn\":{\"title\":\"shadcn/ui\",\"description\":\"Beautiful and accessible UI components\"},\"auth\":{\"title\":\"Better Auth\",\"description\":\"Modern authentication solution\"}}}"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 3, "column": 517}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

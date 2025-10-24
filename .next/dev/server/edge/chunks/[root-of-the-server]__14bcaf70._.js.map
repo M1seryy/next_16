@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/pkg/libraries/locale/routing.ts"],"sourcesContent":["import { defineRouting } from 'next-intl/routing'\n\nexport const routing = defineRouting({\n    locales: ['en', 'uk'],\n    localePrefix: 'as-needed',\n    localeDetection: true,\n    defaultLocale: 'en'\n})\n\nexport type ILocale = (typeof routing.locales)[number]\n\n"],"names":[],"mappings":";;;;AAAA;;AAEO,MAAM,UAAU,IAAA,2PAAa,EAAC;IACjC,SAAS;QAAC;QAAM;KAAK;IACrB,cAAc;IACd,iBAAiB;IACjB,eAAe;AACnB"}},
+    {"offset": {"line": 35, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/pkg/libraries/locale/index.ts"],"sourcesContent":["export * from './routing'\n\n"],"names":[],"mappings":";AAAA"}},
+    {"offset": {"line": 42, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/middleware.ts"],"sourcesContent":["import createMiddleware from 'next-intl/middleware'\nimport { routing } from './pkg/libraries/locale'\n\nexport default createMiddleware(routing)\n\nexport const config = {\n  // Match only internationalized pathnames\n  matcher: ['/', '/(uk|en)/:path*']\n}\n\n"],"names":[],"mappings":";;;;;;AAAA;AACA;AAAA;;;uCAEe,IAAA,yMAAgB,EAAC,+JAAO;AAEhC,MAAM,SAAS;IACpB,yCAAyC;IACzC,SAAS;QAAC;QAAK;KAAkB;AACnC"}}]
+}

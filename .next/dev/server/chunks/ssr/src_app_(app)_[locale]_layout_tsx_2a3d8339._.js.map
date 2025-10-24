@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/victorhachkajlo/Desktop/new-project/src/app/%28app%29/%5Blocale%5D/layout.tsx"],"sourcesContent":["import type { Metadata } from \"next\";\nimport { Inter } from \"next/font/google\";\nimport \"../../globals.css\";\n\nconst inter = Inter({ subsets: [\"latin\"] });\n\nexport const metadata: Metadata = {\n  title: \"Books\",\n  description: \"Books with next 16\",\n};\n\nexport default function LocaleLayout({\n  children,\n}: {\n  children: React.ReactNode;\n}) {\n  return (\n    <html lang=\"en\">\n      <body className={inter.className}>{children}</body>\n    </html>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;;;AAMO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;AACf;AAEe,SAAS,aAAa,EACnC,QAAQ,EAGT;IACC,qBACE,8OAAC;QAAK,MAAK;kBACT,cAAA,8OAAC;YAAK,WAAW,oJAAK,CAAC,SAAS;sBAAG;;;;;;;;;;;AAGzC","debugId":null}}]
+}
