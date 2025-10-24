@@ -6,6 +6,7 @@ import { hasLocale } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
 import { routing } from '@/pkg/libraries/locale'
 import { LayoutModule } from '@/app/modules/layout'
+import { RestApiProvider } from '@/pkg/libraries/rest-api'
 
 import { notFound } from 'next/navigation'
 
@@ -17,7 +18,7 @@ interface IProps {
 
 // metadata
 export const generateMetadata = async (_props?: IProps): Promise<Metadata> => {
-  const title = 'New Project'
+  const title = 'Book store'
   const description = 'A new project with Next.js 16, Supabase, shadcn/ui, and Better Auth'
   const baseUrl = 'http://localhost:3000'
 
@@ -56,9 +57,11 @@ const LocaleLayout: FC<Readonly<IProps>> = async (props) => {
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider>
-          <LayoutModule>{children}</LayoutModule>
-        </NextIntlClientProvider>
+        <RestApiProvider>
+          <NextIntlClientProvider>
+            <LayoutModule>{children}</LayoutModule>
+          </NextIntlClientProvider>
+        </RestApiProvider>
       </body>
     </html>
   )

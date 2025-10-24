@@ -1,7 +1,8 @@
 'use client'
 import { type FC } from 'react'
-import { UsersListComponent } from '@/app/features/users/users-list'
+import { BooksListComponent } from '@/app/features/books'
 import { SearchFormComponent } from '@/app/features/search'
+import { BannerComponent } from '@/app/shared/ui'
 import { useTranslations } from 'next-intl'
 
 // interface
@@ -18,9 +19,10 @@ const HomeModule: FC<Readonly<IProps>> = (props) => {
   // return
   return (
     <div className='space-y-6'>
-      <div className='text-center'>
-        <h1 className='text-3xl font-bold text-gray-900'>{t('HomePage.title')}</h1>
-        <p className='mt-2 text-gray-600'>{t('HomePage.description')}</p>
+      <div>
+        <BannerComponent />
+        <h1 className='text-2xl font-bold'>{t('home.title')}</h1>
+        <p>{t('home.subtitle')}</p>
       </div>
 
       <div className='flex justify-center'>
@@ -32,7 +34,7 @@ const HomeModule: FC<Readonly<IProps>> = (props) => {
         />
       </div>
 
-      <UsersListComponent />
+      <BooksListComponent />
     </div>
   )
 }
