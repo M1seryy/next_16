@@ -3,6 +3,7 @@
 import { type FC } from 'react'
 
 import { useBooksQuery } from '@/app/entities/api/books/books.query'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app/shared/ui'
 
 // interface
 interface IProps {
@@ -18,7 +19,11 @@ const BooksListBlockComponent: FC<Readonly<IProps>> = (props) => {
   if (isLoading) {
     return (
       <div className='flex justify-center py-8'>
-        <div className='text-lg'>Loading books...</div>
+        <Card className='w-64'>
+          <CardContent className='pt-6'>
+            <div className='text-muted-foreground text-center'>Loading books...</div>
+          </CardContent>
+        </Card>
       </div>
     )
   }
@@ -26,7 +31,11 @@ const BooksListBlockComponent: FC<Readonly<IProps>> = (props) => {
   if (error) {
     return (
       <div className='flex justify-center py-8'>
-        <div className='text-lg text-red-600'>Error loading books</div>
+        <Card className='border-destructive w-64'>
+          <CardContent className='pt-6'>
+            <div className='text-destructive text-center'>Error loading books</div>
+          </CardContent>
+        </Card>
       </div>
     )
   }
@@ -37,15 +46,24 @@ const BooksListBlockComponent: FC<Readonly<IProps>> = (props) => {
       <h2 className='text-xl font-semibold'>Books from Database</h2>
 
       {books && books.length === 0 ? (
-        <p className='text-gray-500'>No books found</p>
+        <Card>
+          <CardContent className='pt-6'>
+            <div className='text-muted-foreground text-center'>No books found</div>
+          </CardContent>
+        </Card>
       ) : (
         <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
           {books?.map((book) => (
-            <div key={book.id} className='rounded-lg border p-4'>
-              <h3 className='font-medium'>{book.title}</h3>
-              <p className='text-sm text-gray-600'>{book.author}</p>
-              <p className='text-xs text-gray-400'>Published: {book.publishedYear}</p>
-            </div>
+            <Card key={book.id}>
+              <CardHeader>
+                <CardTitle className='text-lg'>{book.title}</CardTitle>
+                <CardDescription>by {book.author}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className='text-muted-foreground text-sm'>Published: {book.publishedYear}</p>
+                {book.description && <p className='text-muted-foreground mt-2 text-sm'>{book.description}</p>}
+              </CardContent>
+            </Card>
           ))}
         </div>
       )}

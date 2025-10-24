@@ -3,7 +3,7 @@ import postgres from 'postgres'
 
 import { envServer } from '@/config/env'
 
-import * as schema from './schemas'
+import * as schema from '../schemas'
 
 const connectionString = envServer.DATABASE_URL!
 

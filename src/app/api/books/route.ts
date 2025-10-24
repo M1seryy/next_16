@@ -1,7 +1,7 @@
 import { ilike, or } from 'drizzle-orm'
 import { NextRequest, NextResponse } from 'next/server'
 
-import { db } from '@/pkg/integrations/supabase'
+import { db } from '@/pkg/integrations/supabase/drizzle'
 import { books } from '@/pkg/integrations/supabase/schemas'
 
 export async function GET(request: NextRequest) {

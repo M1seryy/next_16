@@ -11,12 +11,17 @@
     "home": "Home",
     "login": "Login"
   },
+  "common": {
+    "language": "Language",
+    "english": "English",
+    "ukrainian": "Ukrainian"
+  },
   "home": {
     "title": "Welcome to Book Store",
     "subtitle": "Discover amazing books and expand your knowledge"
   },
   "Footer": {
-    "copyright": "© 2024 Next.js 16 App. All rights reserved."
+    "copyright": "© 2025 Next.js 16 App. All rights reserved."
   },
   "NotFound": {
     "title": "Page Not Found",

@@ -1,7 +1,7 @@
 import { betterAuth } from 'better-auth'
 import { drizzleAdapter } from 'better-auth/adapters/drizzle'
 
-import { db } from '@/pkg/integrations/supabase'
+import { db } from '@/pkg/integrations/supabase/drizzle'
 import { accounts, sessions, users, verification } from '@/pkg/integrations/supabase/schemas'
 
 export const auth = betterAuth({
