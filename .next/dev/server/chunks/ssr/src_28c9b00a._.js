@@ -764,6 +764,7 @@ const LocaleLayout = async (props)=>{
     const { children, params } = props;
     const { locale } = await params;
     // if (!hasLocale(routing.locales, locale)) {
+    //   notFound()
     // }
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$server$2f$react$2d$server$2f$RequestLocaleCache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__setCachedRequestLocale__as__setRequestLocale$3e$__["setRequestLocale"])(locale);
     // return

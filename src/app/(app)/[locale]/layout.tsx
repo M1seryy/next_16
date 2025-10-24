@@ -49,7 +49,7 @@ const LocaleLayout: FC<Readonly<IProps>> = async (props) => {
   const { locale } = await params
 
   // if (!hasLocale(routing.locales, locale)) {
-
+  //   notFound()
   // }
   setRequestLocale(locale)
 

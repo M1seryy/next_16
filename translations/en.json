@@ -25,10 +25,16 @@
     "goBack": "Go Back"
   },
   "Search": {
-    "placeholder": "Search users...",
+    "placeholder": "Search books...",
     "button": "Search",
     "searching": "Searching..."
   },
+      "Auth": {
+        "title": "Welcome Back",
+        "subtitle": "Sign in to your account",
+        "signInWithGoogle": "Sign in with Google",
+        "signOut": "Sign Out"
+      },
   "TechStack": {
     "nextjs": {
       "title": "Next.js 16",

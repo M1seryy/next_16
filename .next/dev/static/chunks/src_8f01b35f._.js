@@ -9,6 +9,8 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/react-client/index.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$use$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/use-intl/dist/esm/development/react.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -16,57 +18,43 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 // component
 const HeaderComponent = ()=>{
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(13);
-    if ($[0] !== "316b149903641a775d060b1dd3156794c456565eb9d770fb9ac4024c85332580") {
-        for(let $i = 0; $i < 13; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(17);
+    if ($[0] !== "fe7f1db6e4fcdcb3f769c20f2b8ee041dcfa6325acd25c100a2f155a10fb2a9e") {
+        for(let $i = 0; $i < 17; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "316b149903641a775d060b1dd3156794c456565eb9d770fb9ac4024c85332580";
+        $[0] = "fe7f1db6e4fcdcb3f769c20f2b8ee041dcfa6325acd25c100a2f155a10fb2a9e";
     }
     const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useTranslations"])();
+    const locale = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$use$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLocale"])();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     let t0;
-    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
-        t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+    if ($[1] !== locale || $[2] !== router) {
+        t0 = ()=>{
+            router.push(`/${locale}/login`);
+        };
+        $[1] = locale;
+        $[2] = router;
+        $[3] = t0;
+    } else {
+        t0 = $[3];
+    }
+    const handleLoginClick = t0;
+    let t1;
+    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             href: "/",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                 className: "text-4xl",
                 children: "Book Store"
             }, void 0, false, {
                 fileName: "[project]/src/app/widgets/header/header.component.tsx",
-                lineNumber: 23,
-                columnNumber: 25
-            }, ("TURBOPACK compile-time value", void 0))
-        }, void 0, false, {
-            fileName: "[project]/src/app/widgets/header/header.component.tsx",
-            lineNumber: 23,
-            columnNumber: 10
-        }, ("TURBOPACK compile-time value", void 0));
-        $[1] = t0;
-    } else {
-        t0 = $[1];
-    }
-    let t1;
-    if ($[2] !== t) {
-        t1 = t("navigation.home");
-        $[2] = t;
-        $[3] = t1;
-    } else {
-        t1 = $[3];
-    }
-    let t2;
-    if ($[4] !== t1) {
-        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-            className: "text-xl",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                href: "/",
-                children: t1
-            }, void 0, false, {
-                fileName: "[project]/src/app/widgets/header/header.component.tsx",
                 lineNumber: 38,
-                columnNumber: 34
+                columnNumber: 25
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/src/app/widgets/header/header.component.tsx",
@@ -74,87 +62,119 @@ const HeaderComponent = ()=>{
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
         $[4] = t1;
-        $[5] = t2;
     } else {
-        t2 = $[5];
+        t1 = $[4];
+    }
+    let t2;
+    if ($[5] !== t) {
+        t2 = t("navigation.home");
+        $[5] = t;
+        $[6] = t2;
+    } else {
+        t2 = $[6];
     }
     let t3;
-    if ($[6] !== t) {
-        t3 = t("navigation.login");
-        $[6] = t;
-        $[7] = t3;
-    } else {
-        t3 = $[7];
-    }
-    let t4;
-    if ($[8] !== t3) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+    if ($[7] !== t2) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
             className: "text-xl",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                href: "/login",
-                children: t3
+                href: "/",
+                children: t2
             }, void 0, false, {
                 fileName: "[project]/src/app/widgets/header/header.component.tsx",
-                lineNumber: 54,
+                lineNumber: 53,
                 columnNumber: 34
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/src/app/widgets/header/header.component.tsx",
-            lineNumber: 54,
+            lineNumber: 53,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
+        $[7] = t2;
         $[8] = t3;
-        $[9] = t4;
     } else {
-        t4 = $[9];
+        t3 = $[8];
+    }
+    let t4;
+    if ($[9] !== t) {
+        t4 = t("navigation.login");
+        $[9] = t;
+        $[10] = t4;
+    } else {
+        t4 = $[10];
     }
     let t5;
-    if ($[10] !== t2 || $[11] !== t4) {
-        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    if ($[11] !== handleLoginClick || $[12] !== t4) {
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+            className: "text-xl",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                onClick: handleLoginClick,
+                children: t4
+            }, void 0, false, {
+                fileName: "[project]/src/app/widgets/header/header.component.tsx",
+                lineNumber: 69,
+                columnNumber: 34
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
+            fileName: "[project]/src/app/widgets/header/header.component.tsx",
+            lineNumber: 69,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[11] = handleLoginClick;
+        $[12] = t4;
+        $[13] = t5;
+    } else {
+        t5 = $[13];
+    }
+    let t6;
+    if ($[14] !== t3 || $[15] !== t5) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "m-auto mt-3.5 flex w-[1280px] flex-col",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "mx-auto flex w-full items-center justify-between px-4 md:px-6",
                 children: [
-                    t0,
+                    t1,
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                             className: "flex gap-5",
                             children: [
-                                t2,
-                                t4
+                                t3,
+                                t5
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/widgets/header/header.component.tsx",
-                            lineNumber: 62,
+                            lineNumber: 78,
                             columnNumber: 154
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/app/widgets/header/header.component.tsx",
-                        lineNumber: 62,
+                        lineNumber: 78,
                         columnNumber: 149
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/widgets/header/header.component.tsx",
-                lineNumber: 62,
+                lineNumber: 78,
                 columnNumber: 66
             }, ("TURBOPACK compile-time value", void 0))
         }, void 0, false, {
             fileName: "[project]/src/app/widgets/header/header.component.tsx",
-            lineNumber: 62,
+            lineNumber: 78,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
-        $[10] = t2;
-        $[11] = t4;
-        $[12] = t5;
+        $[14] = t3;
+        $[15] = t5;
+        $[16] = t6;
     } else {
-        t5 = $[12];
+        t6 = $[16];
     }
-    return t5;
+    return t6;
 };
-_s(HeaderComponent, "h6+q2O3NJKPY5uL0BIJGLIanww8=", false, function() {
+_s(HeaderComponent, "7RGij0XnLcyDh/yGyZlLMmviTJY=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useTranslations"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useTranslations"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$use$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLocale"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
 });
 _c = HeaderComponent;

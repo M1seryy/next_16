@@ -25,10 +25,16 @@
     "goBack": "Повернутися"
   },
   "Search": {
-    "placeholder": "Пошук користувачів...",
+    "placeholder": "Пошук книг...",
     "button": "Пошук",
     "searching": "Шукаю..."
   },
+      "Auth": {
+        "title": "Ласкаво просимо",
+        "subtitle": "Увійдіть до свого акаунту",
+        "signInWithGoogle": "Увійти через Google",
+        "signOut": "Вийти"
+      },
   "TechStack": {
     "nextjs": {
       "title": "Next.js 16",

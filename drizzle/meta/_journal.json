@@ -15,6 +15,13 @@
       "when": 1761304706319,
       "tag": "0001_exotic_tinkerer",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1761313186312,
+      "tag": "0002_dear_spot",
+      "breakpoints": true
     }
   ]
 }
