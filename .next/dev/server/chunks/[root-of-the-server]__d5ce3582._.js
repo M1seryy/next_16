@@ -163,7 +163,9 @@ __turbopack_context__.s([
     "sessions",
     ()=>sessions,
     "users",
-    ()=>users
+    ()=>users,
+    "verification",
+    ()=>verification
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$drizzle$2d$orm$2f$pg$2d$core$2f$table$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/drizzle-orm/pg-core/table.js [app-route] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$drizzle$2d$orm$2f$pg$2d$core$2f$columns$2f$text$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/drizzle-orm/pg-core/columns/text.js [app-route] (ecmascript)");
@@ -207,6 +209,14 @@ const accounts = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_module
     createdAt: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$drizzle$2d$orm$2f$pg$2d$core$2f$columns$2f$timestamp$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["timestamp"])('created_at').defaultNow().notNull(),
     updatedAt: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$drizzle$2d$orm$2f$pg$2d$core$2f$columns$2f$timestamp$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["timestamp"])('updated_at').defaultNow().notNull()
 });
+const verification = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$drizzle$2d$orm$2f$pg$2d$core$2f$table$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["pgTable"])('verification', {
+    id: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$drizzle$2d$orm$2f$pg$2d$core$2f$columns$2f$text$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["text"])('id').primaryKey(),
+    identifier: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$drizzle$2d$orm$2f$pg$2d$core$2f$columns$2f$text$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["text"])('identifier').notNull(),
+    value: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$drizzle$2d$orm$2f$pg$2d$core$2f$columns$2f$text$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["text"])('value').notNull(),
+    expiresAt: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$drizzle$2d$orm$2f$pg$2d$core$2f$columns$2f$timestamp$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["timestamp"])('expires_at').notNull(),
+    createdAt: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$drizzle$2d$orm$2f$pg$2d$core$2f$columns$2f$timestamp$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["timestamp"])('created_at').defaultNow().notNull(),
+    updatedAt: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$drizzle$2d$orm$2f$pg$2d$core$2f$columns$2f$timestamp$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["timestamp"])('updated_at').defaultNow().notNull()
+});
 }),
 "[project]/src/pkg/integrations/supabase/schemas/index.ts [app-route] (ecmascript) <locals>", ((__turbopack_context__) => {
 "use strict";
@@ -228,7 +238,9 @@ __turbopack_context__.s([
     "sessions",
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["sessions"],
     "users",
-    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["users"]
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["users"],
+    "verification",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["verification"]
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$index$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/src/pkg/integrations/supabase/schemas/index.ts [app-route] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$books$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/pkg/integrations/supabase/schemas/books.schema.ts [app-route] (ecmascript)");
@@ -286,26 +298,29 @@ const auth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f
     secrets: [
         process.env.AUTH_SECRET
     ],
+    database: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$auth$2f$dist$2f$adapters$2f$drizzle$2d$adapter$2f$index$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__["drizzleAdapter"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$drizzle$2e$server$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"], {
+        provider: "pg",
+        schema: {
+            user: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["users"],
+            session: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["sessions"],
+            account: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["accounts"],
+            verification: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["verification"]
+        }
+    }),
     socialProviders: {
         google: {
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET
         }
     },
-    database: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$auth$2f$dist$2f$adapters$2f$drizzle$2d$adapter$2f$index$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__["drizzleAdapter"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$drizzle$2e$server$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"], {
-        provider: "pg",
-        schema: {
-            users: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["users"],
-            sessions: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["sessions"],
-            accounts: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["accounts"]
-        }
-    }),
-    logger: {
-        level: "debug",
-        disabled: false
-    }
+    session: {
+        expiresIn: 60 * 60 * 24 * 7,
+        updateAge: 60 * 60 * 24
+    },
+    trustedOrigins: [
+        "http://localhost:3000"
+    ]
 });
-console.log('🔐 Better Auth configured with Drizzle database adapter');
 }),
 "[project]/src/app/api/auth/[...all]/route.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -320,10 +335,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2
 ;
 const GET = async (request)=>{
     try {
+        console.log('Auth GET request:', request.url);
         return await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$better$2d$auth$2f$auth$2e$config$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["auth"].handler(request);
     } catch (error) {
+        console.error('Auth GET error:', error);
         return new Response(JSON.stringify({
-            error: 'Auth GET failed'
+            error: 'Auth GET failed',
+            details: error instanceof Error ? error.message : 'Unknown error'
         }), {
             status: 500,
             headers: {
@@ -334,10 +352,13 @@ const GET = async (request)=>{
 };
 const POST = async (request)=>{
     try {
+        console.log('Auth POST request:', request.url);
         return await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$better$2d$auth$2f$auth$2e$config$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["auth"].handler(request);
     } catch (error) {
+        console.error('Auth POST error:', error);
         return new Response(JSON.stringify({
-            error: 'Auth POST failed'
+            error: 'Auth POST failed',
+            details: error instanceof Error ? error.message : 'Unknown error'
         }), {
             status: 500,
             headers: {

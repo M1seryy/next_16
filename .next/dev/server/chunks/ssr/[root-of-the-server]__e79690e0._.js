@@ -890,7 +890,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$au
 "use client";
 ;
 const authClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$auth$2f$dist$2f$shared$2f$better$2d$auth$2e$CrugyrXH$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__c__as__createAuthClient$3e$__["createAuthClient"])({
-    baseURL: ("TURBOPACK compile-time value", "http://localhost:3000") || 'http://localhost:3000'
+    baseURL: ("TURBOPACK compile-time value", "http://localhost:3000") || 'http://localhost:3000',
+    fetchOptions: {
+        credentials: 'include'
+    }
 });
 }),
 "[project]/src/app/features/block/auth-block/auth-block.component.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
@@ -931,15 +934,19 @@ const AuthBlockComponent = ()=>{
     }, []);
     const handleGoogleSignIn = async ()=>{
         try {
+            console.log('Starting Google sign in...');
             const result = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$auth$2f$authClient$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["authClient"].signIn.social({
                 provider: 'google',
                 callbackURL: '/'
             });
+            console.log('Google sign in result:', result);
             // Перевіряємо стан після входу
             if (result && 'user' in result) {
                 setUser(result.user);
             }
-        } catch (error) {}
+        } catch (error) {
+            console.error('Google sign in error:', error);
+        }
     };
     const handleSignOut = async ()=>{
         try {
@@ -954,7 +961,7 @@ const AuthBlockComponent = ()=>{
             children: "Loading..."
         }, void 0, false, {
             fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-            lineNumber: 58,
+            lineNumber: 63,
             columnNumber: 12
         }, ("TURBOPACK compile-time value", void 0));
     }
@@ -972,7 +979,7 @@ const AuthBlockComponent = ()=>{
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-                    lineNumber: 66,
+                    lineNumber: 71,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$components$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -981,7 +988,7 @@ const AuthBlockComponent = ()=>{
                     children: "Sign Out"
                 }, void 0, false, {
                     fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-                    lineNumber: 67,
+                    lineNumber: 72,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0))
             ]
@@ -990,12 +997,12 @@ const AuthBlockComponent = ()=>{
             children: "Sign in with Google"
         }, void 0, false, {
             fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-            lineNumber: 72,
+            lineNumber: 77,
             columnNumber: 9
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-        lineNumber: 63,
+        lineNumber: 68,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

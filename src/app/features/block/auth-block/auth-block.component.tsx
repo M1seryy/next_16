@@ -33,16 +33,21 @@ const AuthBlockComponent: FC<Readonly<IProps>> = () => {
 
   const handleGoogleSignIn = async () => {
     try {
+      console.log('Starting Google sign in...')
       const result = await authClient.signIn.social({
         provider: 'google',
         callbackURL: '/',
       })
 
+      console.log('Google sign in result:', result)
+
       // Перевіряємо стан після входу
       if (result && 'user' in result) {
         setUser(result.user)
       }
-    } catch (error) {}
+    } catch (error) {
+      console.error('Google sign in error:', error)
+    }
   }
 
   const handleSignOut = async () => {
