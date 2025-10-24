@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/victorhachkajlo/Desktop/new-project/node_modules/tailwindcss/utilities.css"],"sourcesContent":["@tailwind utilities;\n"],"names":[],"mappings":"AAAA","ignoreList":[0],"debugId":null}},
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/victorhachkajlo/Desktop/new-project/src/config/styles/global.css"],"sourcesContent":["@import 'tailwindcss/base';\n@import 'tailwindcss/components';\n@import 'tailwindcss/utilities';\n"],"names":[],"mappings":"","debugId":null}}]
-}

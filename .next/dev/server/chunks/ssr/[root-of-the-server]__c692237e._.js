@@ -155,23 +155,23 @@ const HomeModule = async (props)=>{
                     children: "Home"
                 }, void 0, false, {
                     fileName: "[project]/src/app/modules/home/home.module.tsx",
-                    lineNumber: 20,
+                    lineNumber: 21,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$users$2f$users$2d$list$2f$users$2d$list$2e$component$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__UsersListComponent$3e$__["UsersListComponent"], {}, void 0, false, {
                     fileName: "[project]/src/app/modules/home/home.module.tsx",
-                    lineNumber: 22,
+                    lineNumber: 23,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/modules/home/home.module.tsx",
-            lineNumber: 19,
+            lineNumber: 20,
             columnNumber: 7
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/app/modules/home/home.module.tsx",
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

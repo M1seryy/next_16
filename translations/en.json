@@ -16,6 +16,11 @@
     "goHome": "Go to Home",
     "goBack": "Go Back"
   },
+  "Search": {
+    "placeholder": "Search users...",
+    "button": "Search",
+    "searching": "Searching..."
+  },
   "TechStack": {
     "nextjs": {
       "title": "Next.js 16",

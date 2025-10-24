@@ -5,6 +5,11 @@ interface IProps {
   // no props needed
 }
 
+// utility function for consistent date formatting
+const formatDate = (date: Date): string => {
+  return date.toISOString().split('T')[0] // Returns YYYY-MM-DD format
+}
+
 // component
 const UsersListComponent: FC<Readonly<IProps>> = () => {
   // Mock data for now
@@ -26,7 +31,7 @@ const UsersListComponent: FC<Readonly<IProps>> = () => {
             <div key={user.id} className='rounded-lg border p-4'>
               <h3 className='font-medium'>{user.name}</h3>
               <p className='text-sm text-red-600'>{user.email}</p>
-              <p className='text-xs text-gray-400'>Created: {new Date(user.createdAt).toLocaleDateString()}</p>
+              <p className='text-xs text-gray-400'>Created: {formatDate(new Date(user.createdAt))}</p>
             </div>
           ))}
         </div>

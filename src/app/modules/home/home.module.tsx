@@ -1,6 +1,8 @@
+'use client'
 import { type FC } from 'react'
-import { getTranslations } from 'next-intl/server'
 import { UsersListComponent } from '@/app/features/users/users-list'
+import { SearchFormComponent } from '@/app/features/search'
+import { useTranslations } from 'next-intl'
 
 // interface
 interface IProps {
@@ -8,19 +10,29 @@ interface IProps {
 }
 
 // component
-const HomeModule: FC<Readonly<IProps>> = async (props) => {
+const HomeModule: FC<Readonly<IProps>> = (props) => {
   const { searchQuery = '' } = props
 
-  const t = await getTranslations()
+  const t = useTranslations()
 
   // return
   return (
-    <div className='container mx-auto px-4 py-8'>
-      <div className='space-y-6'>
-        <h1 className='text-2xl'>Home</h1>
-
-        <UsersListComponent />
+    <div className='space-y-6'>
+      <div className='text-center'>
+        <h1 className='text-3xl font-bold text-gray-900'>{t('HomePage.title')}</h1>
+        <p className='mt-2 text-gray-600'>{t('HomePage.description')}</p>
       </div>
+
+      <div className='flex justify-center'>
+        <SearchFormComponent
+          onSearch={(query) => {
+            console.log('Search query:', query)
+          }}
+          initialValue={searchQuery}
+        />
+      </div>
+
+      <UsersListComponent />
     </div>
   )
 }

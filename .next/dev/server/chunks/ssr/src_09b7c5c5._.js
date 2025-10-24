@@ -248,7 +248,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$widgets$2f$foo
 const LayoutModule = (props)=>{
     const { children } = props;
     // return
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "bg-background flex min-h-screen flex-col",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$widgets$2f$header$2f$header$2e$component$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__HeaderComponent$3e$__["HeaderComponent"], {}, void 0, false, {
                 fileName: "[project]/src/app/modules/layout/layout.module.tsx",
@@ -256,8 +257,15 @@ const LayoutModule = (props)=>{
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                className: "min-h-screen",
-                children: children
+                className: "flex-1",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8",
+                    children: children
+                }, void 0, false, {
+                    fileName: "[project]/src/app/modules/layout/layout.module.tsx",
+                    lineNumber: 19,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/app/modules/layout/layout.module.tsx",
                 lineNumber: 18,
@@ -265,11 +273,15 @@ const LayoutModule = (props)=>{
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$widgets$2f$footer$2f$footer$2e$component$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__FooterComponent$3e$__["FooterComponent"], {}, void 0, false, {
                 fileName: "[project]/src/app/modules/layout/layout.module.tsx",
-                lineNumber: 20,
+                lineNumber: 22,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
-    }, void 0, true);
+    }, void 0, true, {
+        fileName: "[project]/src/app/modules/layout/layout.module.tsx",
+        lineNumber: 15,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0));
 };
 const __TURBOPACK__default__export__ = LayoutModule;
 }),

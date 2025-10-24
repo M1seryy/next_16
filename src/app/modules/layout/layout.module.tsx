@@ -1,5 +1,6 @@
 import { type FC, type ReactNode } from 'react'
 import { HeaderComponent, FooterComponent } from '@/app/widgets'
+import { ContainerComponent } from '@/app/shared/ui/container'
 
 // interface
 interface IProps {
@@ -15,7 +16,7 @@ const LayoutModule: FC<Readonly<IProps>> = (props) => {
     <>
       <HeaderComponent />
 
-      <main className='min-h-screen'>{children}</main>
+      <ContainerComponent variant='main'>{children}</ContainerComponent>
 
       <FooterComponent />
     </>
