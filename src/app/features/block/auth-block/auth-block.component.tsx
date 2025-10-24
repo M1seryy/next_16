@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import { type FC, useEffect, useState } from 'react'
 
 import { authClient } from '@/app/entities/auth/authClient'
+import { useUserQuery } from '@/app/entities/api/user'
 import { Button } from '@/app/shared/ui'
 
 // interface
@@ -11,21 +12,23 @@ interface IProps {}
 
 // component
 const AuthBlockComponent: FC<Readonly<IProps>> = () => {
-  const [user, setUser] = useState<{ name?: string; email?: string } | null>(null)
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [loading, setLoading] = useState(true)
   const t = useTranslations('Auth')
+
+  const { data: user, isLoading: userLoading, error } = useUserQuery()
 
   const checkAuth = async () => {
     try {
       const session = await authClient.getSession()
 
       if (session && 'data' in session && session.data) {
-        setUser(session.data.user || null)
+        setIsAuthenticated(true)
       } else {
-        setUser(null)
+        setIsAuthenticated(false)
       }
     } catch (_error) {
-      setUser(null)
+      setIsAuthenticated(false)
     } finally {
       setLoading(false)
     }
@@ -43,7 +46,7 @@ const AuthBlockComponent: FC<Readonly<IProps>> = () => {
       })
 
       if (result && 'user' in result && result.user) {
-        setUser(result.user as { name?: string; email?: string })
+        setIsAuthenticated(true)
       }
     } catch (_error) {}
   }
@@ -56,7 +59,7 @@ const AuthBlockComponent: FC<Readonly<IProps>> = () => {
       })
 
       if (result && 'user' in result && result.user) {
-        setUser(result.user as { name?: string; email?: string })
+        setIsAuthenticated(true)
       }
     } catch (_error) {}
   }
@@ -64,18 +67,18 @@ const AuthBlockComponent: FC<Readonly<IProps>> = () => {
   const handleSignOut = async () => {
     try {
       await authClient.signOut()
-      setUser(null)
+      setIsAuthenticated(false)
     } catch (_error) {}
   }
 
-  if (loading) {
+  if (loading || userLoading) {
     return <div>Loading...</div>
   }
 
   // return
   return (
     <div className='flex items-center gap-2'>
-      {user ? (
+      {isAuthenticated && user ? (
         <>
           <span className='text-lg font-medium'>Hello, {user.name || user.email}!</span>
           <Button variant='outline' onClick={handleSignOut}>

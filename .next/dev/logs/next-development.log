@@ -4531,3 +4531,792 @@ https://nextjs.org/docs/messages/module-not-found
 [01:31:21.634] Server  LOG      ✓ Compiled in 79ms
 [01:31:37.572] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [01:31:46.937] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:34:45.970] Server  LOG      ✓ Compiled in 421ms
+[02:08:09.257] Server  LOG      ✓ Compiled in 136ms
+[02:08:15.532] Server  LOG      ✓ Compiled in 472ms
+[02:08:17.084] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:08:30.441] Server  LOG      ✓ Compiled in 144ms
+[02:08:37.028] Server  LOG      ✓ Compiled in 62ms
+[02:08:44.214] Server  LOG      ✓ Compiled in 184ms
+[02:08:55.689] Server  LOG      ✓ Compiled in 122ms
+[02:09:10.484] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.485] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.492] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.493] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.499] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.501] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.501] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.504] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.506] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.507] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.508] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.513] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.517] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.519] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.522] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.524] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.530] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.531] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.533] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.535] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.540] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.542] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.543] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.545] Server  ERROR    ⨯ ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[02:09:10.547] Server  LOG      ✓ Compiled in 306ms
+[02:09:11.323] Browser ERROR   ./src/app/features/block/auth-block/auth-block.component.tsx:7:1
+Module not found: Can't resolve '@/app/entities/api/user'
+   5 |
+   6 | import { authClient } from '@/app/entities/auth/authClient'
+>  7 | import { useUserQuery } from '@/app/entities/api/user'
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | import { Button } from '@/app/shared/ui'
+   9 |
+  10 | // interface
+
+Import map: aliased to relative './src/app/entities/api/user' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Client Component Browser]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/features/block/auth-block/auth-block.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Client Component SSR]
+    ./src/app/widgets/header/header.component.tsx [Server Component]
+    ./src/app/modules/layout/layout.module.tsx [Server Component]
+    ./src/app/(app)/[locale]/layout.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[02:09:24.941] Server  LOG      ✓ Compiled in 432ms
+[02:09:25.904] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:10:34.569] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:10:43.798] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:10:52.330] Server  LOG      ✓ Compiled in 142ms
+[02:11:13.815] Server  LOG      ✓ Compiled in 71ms
+[02:11:28.951] Server  LOG      ✓ Compiled in 60ms
+[02:12:46.180] Server  LOG      ✓ Compiled in 87ms

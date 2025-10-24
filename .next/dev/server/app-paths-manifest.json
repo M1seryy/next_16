@@ -1,4 +1,8 @@
 {
   "/(app)/[locale]/page": "app/(app)/[locale]/page.js",
-  "/api/auth/[...all]/route": "app/api/auth/[...all]/route.js"
+  "/(app)/[locale]/profile/page": "app/(app)/[locale]/profile/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/[...all]/route": "app/api/auth/[...all]/route.js",
+  "/api/books/route": "app/api/books/route.js",
+  "/api/user/route": "app/api/user/route.js"
 }
