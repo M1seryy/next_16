@@ -4519,3 +4519,15 @@ https://nextjs.org/docs/messages/module-not-found
 [00:41:05.623] Server  LOG      ✓ Compiled in 108ms
 [01:02:39.742] Server  LOG      ✓ Compiled in 160ms
 [01:03:28.284] Server  LOG      ✓ Compiled in 59ms
+[01:30:04.802] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:06.920] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:47.171] Server  LOG      ✓ Compiled in 207ms
+[01:30:51.252] Server  LOG      ✓ Compiled in 95ms
+[01:30:55.023] Server  LOG      ✓ Compiled in 54ms
+[01:30:59.257] Server  LOG      ✓ Compiled in 62ms
+[01:31:03.520] Server  LOG      ✓ Compiled in 105ms
+[01:31:08.928] Server  LOG      ✓ Compiled in 188ms
+[01:31:14.078] Server  LOG      ✓ Compiled in 114ms
+[01:31:21.634] Server  LOG      ✓ Compiled in 79ms
+[01:31:37.572] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:31:46.937] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

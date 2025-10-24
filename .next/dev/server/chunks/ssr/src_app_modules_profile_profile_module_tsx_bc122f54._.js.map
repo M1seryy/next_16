@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/victorhachkajlo/Desktop/new-project/src/app/modules/profile/profile.module.tsx"],"sourcesContent":["'use client'\n\nimport { useTranslations } from 'next-intl'\nimport { type FC } from 'react'\n\nimport { ProfileHeaderComponent, ProfileInfoComponent, ProfileSettingsComponent } from '@/app/features/profile'\n\n// interface\ninterface IProps {}\n\n// component\nconst ProfileModule: FC<Readonly<IProps>> = () => {\n  const t = useTranslations()\n\n  // return\n  return (\n    <div className='container mx-auto max-w-4xl space-y-6 p-6'>\n      <ProfileHeaderComponent />\n      <div className='grid gap-6 md:grid-cols-2'>\n        <ProfileInfoComponent />\n        <ProfileSettingsComponent />\n      </div>\n    </div>\n  )\n}\n\nexport default ProfileModule\n"],"names":[],"mappings":";;;;;AAEA;;;;;;AAFA;;;;AAUA,YAAY;AACZ,MAAM,gBAAsC;IAC1C,MAAM,IAAI,IAAA,yNAAe;IAEzB,SAAS;IACT,qBACE,8OAAC;QAAI,WAAU;;0BACb,8OAAC;;;;;0BACD,8OAAC;gBAAI,WAAU;;kCACb,8OAAC;;;;;kCACD,8OAAC;;;;;;;;;;;;;;;;;AAIT;uCAEe","debugId":null}}]
+}

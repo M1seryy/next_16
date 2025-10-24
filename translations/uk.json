@@ -37,7 +37,8 @@
       "Auth": {
         "title": "Ласкаво просимо",
         "subtitle": "Увійдіть до свого акаунту",
-        "signInWithGoogle": "Увійти через Google",
+        "signIn": "Увійти",
+        "signUp": "Зареєструватися",
         "signOut": "Вийти"
       },
   "TechStack": {

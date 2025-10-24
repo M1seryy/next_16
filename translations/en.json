@@ -37,7 +37,8 @@
       "Auth": {
         "title": "Welcome Back",
         "subtitle": "Sign in to your account",
-        "signInWithGoogle": "Sign in with Google",
+        "signIn": "Sign In",
+        "signUp": "Sign Up",
         "signOut": "Sign Out"
       },
   "TechStack": {

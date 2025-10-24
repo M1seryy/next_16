@@ -1,5 +1,6 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { type FC, useEffect, useState } from 'react'
 
 import { authClient } from '@/app/entities/auth/authClient'
@@ -12,6 +13,7 @@ interface IProps {}
 const AuthBlockComponent: FC<Readonly<IProps>> = () => {
   const [user, setUser] = useState<{ name?: string; email?: string } | null>(null)
   const [loading, setLoading] = useState(true)
+  const t = useTranslations('Auth')
 
   const checkAuth = async () => {
     try {
@@ -46,6 +48,19 @@ const AuthBlockComponent: FC<Readonly<IProps>> = () => {
     } catch (_error) {}
   }
 
+  const handleGoogleSignUp = async () => {
+    try {
+      const result = await authClient.signIn.social({
+        provider: 'google',
+        callbackURL: '/?action=signup',
+      })
+
+      if (result && 'user' in result && result.user) {
+        setUser(result.user as { name?: string; email?: string })
+      }
+    } catch (_error) {}
+  }
+
   const handleSignOut = async () => {
     try {
       await authClient.signOut()
@@ -64,11 +79,16 @@ const AuthBlockComponent: FC<Readonly<IProps>> = () => {
         <>
           <span className='text-lg font-medium'>Hello, {user.name || user.email}!</span>
           <Button variant='outline' onClick={handleSignOut}>
-            Sign Out
+            {t('signOut')}
           </Button>
         </>
       ) : (
-        <Button onClick={handleGoogleSignIn}>Sign in with Google</Button>
+        <div className='flex gap-2'>
+          <Button variant='outline' onClick={handleGoogleSignIn}>
+            {t('signIn')}
+          </Button>
+          <Button onClick={handleGoogleSignUp}>{t('signUp')}</Button>
+        </div>
       )}
     </div>
   )
