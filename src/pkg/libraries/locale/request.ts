@@ -5,34 +5,33 @@ import { routing } from './routing'
 
 // request
 export default getRequestConfig(async ({ requestLocale }) => {
-    const requested = await requestLocale
-    const locale = hasLocale(routing.locales, requested) ? requested : routing.defaultLocale
+  const requested = await requestLocale
+  const locale = hasLocale(routing.locales, requested) ? requested : routing.defaultLocale
 
-    return {
-        locale,
-        formats,
-        messages: (await import(`../../../../translations/${locale}.json`)).default,
-    }
+  return {
+    locale,
+    formats,
+    messages: (await import(`../../../../translations/${locale}.json`)).default,
+  }
 })
 
 export const formats = {
-    dateTime: {
-        short: {
-            day: 'numeric',
-            month: 'short',
-            year: 'numeric',
-        },
+  dateTime: {
+    short: {
+      day: 'numeric',
+      month: 'short',
+      year: 'numeric',
     },
-    number: {
-        precise: {
-            maximumFractionDigits: 5,
-        },
+  },
+  number: {
+    precise: {
+      maximumFractionDigits: 5,
     },
-    list: {
-        enumeration: {
-            style: 'long',
-            type: 'conjunction',
-        },
+  },
+  list: {
+    enumeration: {
+      style: 'long',
+      type: 'conjunction',
     },
+  },
 } satisfies Formats
-

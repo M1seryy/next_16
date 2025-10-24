@@ -1,4 +1,5 @@
 import { type FC } from 'react'
+
 import HomeModule from '../../modules/home/home.module'
 
 // interface
@@ -9,7 +10,7 @@ interface IProps {
 export const revalidate = 30
 
 // component
-const HomePage: FC<Readonly<IProps>> = async (props) => {
+const HomePage: FC<Readonly<IProps>> = async (_props) => {
   // return
   return <HomeModule />
 }

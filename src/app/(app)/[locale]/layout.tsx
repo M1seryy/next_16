@@ -1,14 +1,12 @@
-import '@/config/styles/global.css'
-import { type FC, type ReactNode } from 'react'
 import { type Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
-import { hasLocale } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
-import { routing } from '@/pkg/libraries/locale'
+import { type FC, type ReactNode } from 'react'
+
 import { LayoutModule } from '@/app/modules/layout'
 import RestApiProvider from '@/pkg/libraries/rest-api/rest-api.provider'
 
-import { notFound } from 'next/navigation'
+import '@/config/styles/global.css'
 
 // interface
 interface IProps {

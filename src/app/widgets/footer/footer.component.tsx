@@ -1,5 +1,5 @@
-import { type FC } from 'react'
 import { getTranslations } from 'next-intl/server'
+import { type FC } from 'react'
 
 // interface
 interface IProps {

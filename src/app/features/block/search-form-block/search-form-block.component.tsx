@@ -1,8 +1,9 @@
 'use client'
 
-import { type FC } from 'react'
 import { useTranslations } from 'next-intl'
+import { type FC } from 'react'
 import { useForm } from 'react-hook-form'
+
 import { Button } from '@/app/shared/ui'
 import { Input } from '@/app/shared/ui'
 import { Form, FormControl, FormField, FormItem, FormMessage } from '@/app/shared/ui'

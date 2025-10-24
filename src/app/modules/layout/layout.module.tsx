@@ -1,7 +1,8 @@
 import { type FC, type ReactNode } from 'react'
-import { HeaderComponent } from '@/app/widgets/header'
-import { FooterComponent } from '@/app/widgets/footer'
+
 import { ContainerComponent } from '@/app/shared/ui'
+import { FooterComponent } from '@/app/widgets/footer'
+import { HeaderComponent } from '@/app/widgets/header'
 
 // interface
 interface IProps {

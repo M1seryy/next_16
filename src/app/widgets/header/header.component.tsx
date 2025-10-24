@@ -1,9 +1,10 @@
 'use client'
 
-import { type FC } from 'react'
 import { useTranslations } from 'next-intl'
-import { Link } from '@/pkg/libraries/locale/navigation'
+import { type FC } from 'react'
+
 import { AuthBlockComponent } from '@/app/features/block'
+import { Link } from '@/pkg/libraries/locale/navigation'
 
 // interface
 interface IProps {}

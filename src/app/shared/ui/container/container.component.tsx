@@ -1,4 +1,5 @@
 import { type FC, type ReactNode } from 'react'
+
 import { cn } from '@/app/shared/lib/utils'
 
 // interface for container component props

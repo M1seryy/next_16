@@ -1,9 +1,10 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { type FC, useState } from 'react'
+
 import { BooksListBlockComponent, SearchFormBlockComponent } from '@/app/features/block'
 import { BannerComponent } from '@/app/shared/ui'
-import { useTranslations } from 'next-intl'
 
 // interface
 interface IProps {

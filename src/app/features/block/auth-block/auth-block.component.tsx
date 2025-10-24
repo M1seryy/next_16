@@ -1,15 +1,16 @@
 'use client'
 
 import { type FC, useEffect, useState } from 'react'
-import { Button } from '@/app/shared/ui'
+
 import { authClient } from '@/app/entities/auth/authClient'
+import { Button } from '@/app/shared/ui'
 
 // interface
 interface IProps {}
 
 // component
 const AuthBlockComponent: FC<Readonly<IProps>> = () => {
-  const [user, setUser] = useState<any>(null)
+  const [user, setUser] = useState<{ name?: string; email?: string } | null>(null)
   const [loading, setLoading] = useState(true)
 
   const checkAuth = async () => {
@@ -21,7 +22,8 @@ const AuthBlockComponent: FC<Readonly<IProps>> = () => {
       } else {
         setUser(null)
       }
-    } catch (error) {
+    } catch (_error) {
+      setUser(null)
     } finally {
       setLoading(false)
     }
@@ -33,30 +35,22 @@ const AuthBlockComponent: FC<Readonly<IProps>> = () => {
 
   const handleGoogleSignIn = async () => {
     try {
-      console.log('Starting Google sign in...')
       const result = await authClient.signIn.social({
         provider: 'google',
         callbackURL: '/',
       })
 
-      console.log('Google sign in result:', result)
-
-      // Перевіряємо стан після входу
-      if (result && 'user' in result) {
-        setUser(result.user)
+      if (result && 'user' in result && result.user) {
+        setUser(result.user as { name?: string; email?: string })
       }
-    } catch (error) {
-      console.error('Google sign in error:', error)
-    }
+    } catch (_error) {}
   }
 
   const handleSignOut = async () => {
     try {
       await authClient.signOut()
       setUser(null)
-    } catch (error) {
-      console.error('Sign out error:', error)
-    }
+    } catch (_error) {}
   }
 
   if (loading) {

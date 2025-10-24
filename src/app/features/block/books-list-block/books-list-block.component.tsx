@@ -1,6 +1,7 @@
 'use client'
 
 import { type FC } from 'react'
+
 import { useBooksQuery } from '@/app/entities/api/books/books.query'
 
 // interface
