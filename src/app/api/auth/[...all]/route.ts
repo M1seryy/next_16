@@ -12,4 +12,15 @@ export const GET = async (request: NextRequest) => {
     }
 }
 
+export const POST = async (request: NextRequest) => {
+    try {
+        return await auth.handler(request)
+    } catch (error) {
+        return new Response(JSON.stringify({ error: 'Auth POST failed' }), {
+            status: 500,
+            headers: { 'Content-Type': 'application/json' }
+        })
+    }
+}
+
 

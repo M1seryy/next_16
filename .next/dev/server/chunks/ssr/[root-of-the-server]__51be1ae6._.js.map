@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/victorhachkajlo/Desktop/new-project/src/app/%28app%29/%5Blocale%5D/login/page.tsx"],"sourcesContent":["import { type FC } from 'react'\nimport { AuthModule } from '@/app/modules/auth'\n\n// interface\ninterface IProps {\n  params: Promise<{ locale: string }>\n}\n\nexport const revalidate = 30\n\n// component\nconst LoginPage: FC<Readonly<IProps>> = async (props) => {\n  // return\n  return <AuthModule />\n}\n\nexport default LoginPage\n"],"names":[],"mappings":";;;;;;;;;;;;;;AAQO,MAAM,aAAa;AAE1B,YAAY;AACZ,MAAM,YAAkC,OAAO;IAC7C,SAAS;IACT,qBAAO,8OAAC;;;;;AACV;uCAEe","debugId":null}}]
+}

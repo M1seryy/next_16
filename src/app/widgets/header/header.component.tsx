@@ -3,6 +3,7 @@
 import { type FC } from 'react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/pkg/libraries/locale/navigation'
+import { AuthBlockComponent } from '@/app/features/block'
 
 // interface
 interface IProps {}
@@ -19,12 +20,12 @@ const HeaderComponent: FC<Readonly<IProps>> = () => {
           <h1 className='text-4xl'>Book Store</h1>
         </Link>
         <nav>
-          <ul className='flex gap-5'>
+          <ul className='flex items-center gap-5'>
             <li className='text-xl'>
               <Link href={'/'}>{t('navigation.home')}</Link>
             </li>
-            <li className='text-xl'>
-              <Link href={'/login'}>{t('navigation.login')}</Link>
+            <li>
+              <AuthBlockComponent />
             </li>
           </ul>
         </nav>

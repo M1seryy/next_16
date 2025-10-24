@@ -1,51 +1,76 @@
 'use client'
 
-import { type FC } from 'react'
+import { type FC, useEffect, useState } from 'react'
 import { Button } from '@/app/shared/ui'
 import { authClient } from '@/app/entities/auth/authClient'
 
 // interface
-interface IProps {
-  // No props needed
-}
+interface IProps {}
 
 // component
 const AuthBlockComponent: FC<Readonly<IProps>> = () => {
+  const [user, setUser] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
+
+  const checkAuth = async () => {
+    try {
+      const session = await authClient.getSession()
+
+      if (session && 'data' in session && session.data) {
+        setUser(session.data.user || null)
+      } else {
+        setUser(null)
+      }
+    } catch (error) {
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    checkAuth()
+  }, [])
+
   const handleGoogleSignIn = async () => {
     try {
-      console.log('🔐 Starting Google sign in...')
-      console.log('🔐 Auth client:', authClient)
-      console.log('🔐 Auth client methods:', Object.keys(authClient))
-      console.log('🔐 Sign in method:', authClient.signIn)
-
       const result = await authClient.signIn.social({
         provider: 'google',
         callbackURL: '/',
       })
 
-      console.log('🔐 Sign in result:', result)
-    } catch (error) {
-      console.error('❌ Google sign in error:', error)
-      console.error('❌ Error details:', error.message)
-      console.error('❌ Error stack:', error.stack)
-    }
+      // Перевіряємо стан після входу
+      if (result && 'user' in result) {
+        setUser(result.user)
+      }
+    } catch (error) {}
   }
 
   const handleSignOut = async () => {
     try {
       await authClient.signOut()
+      setUser(null)
     } catch (error) {
       console.error('Sign out error:', error)
     }
   }
 
+  if (loading) {
+    return <div>Loading...</div>
+  }
+
   // return
   return (
-    <div className='flex gap-2'>
-      <Button onClick={handleGoogleSignIn}>Sign in with Google</Button>
-      <Button variant='outline' onClick={handleSignOut}>
-        Sign Out
-      </Button>
+    <div className='flex items-center gap-2'>
+      {user ? (
+        <>
+          <span className='text-lg font-medium'>Hello, {user.name || user.email}!</span>
+          <Button variant='outline' onClick={handleSignOut}>
+            Sign Out
+          </Button>
+        </>
+      ) : (
+        <Button onClick={handleGoogleSignIn}>Sign in with Google</Button>
+      )}
     </div>
   )
 }

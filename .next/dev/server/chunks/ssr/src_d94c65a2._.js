@@ -635,6 +635,7 @@ __turbopack_context__.s([
     ()=>__TURBOPACK__default__export__
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$index$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/src/app/shared/ui/index.ts [app-ssr] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$components$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/shared/ui/components/button.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$auth$2f$authClient$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/entities/auth/authClient.ts [app-ssr] (ecmascript)");
@@ -642,57 +643,104 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$au
 ;
 ;
 ;
+;
 // component
 const AuthBlockComponent = ()=>{
+    const [user, setUser] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const checkAuth = async ()=>{
+            try {
+                const session = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$auth$2f$authClient$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["authClient"].getSession();
+                console.log('🔐 Current session:', session);
+                if (session && 'data' in session && session.data) {
+                    setUser(session.data.user || null);
+                } else {
+                    setUser(null);
+                }
+            } catch (error) {
+                console.error('❌ Auth check error:', error);
+                setUser(null);
+            } finally{
+                setLoading(false);
+            }
+        };
+        checkAuth();
+        // Перевіряємо стан кожні 2 секунди (для тестування)
+        const interval = setInterval(checkAuth, 2000);
+        return ()=>clearInterval(interval);
+    }, []);
     const handleGoogleSignIn = async ()=>{
         try {
             console.log('🔐 Starting Google sign in...');
-            console.log('🔐 Auth client:', __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$auth$2f$authClient$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["authClient"]);
-            console.log('🔐 Auth client methods:', Object.keys(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$auth$2f$authClient$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["authClient"]));
-            console.log('🔐 Sign in method:', __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$auth$2f$authClient$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["authClient"].signIn);
             const result = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$auth$2f$authClient$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["authClient"].signIn.social({
                 provider: 'google',
                 callbackURL: '/'
             });
             console.log('🔐 Sign in result:', result);
+            // Перевіряємо стан після входу
+            if (result && 'user' in result) {
+                setUser(result.user);
+            }
         } catch (error) {
             console.error('❌ Google sign in error:', error);
-            console.error('❌ Error details:', error.message);
-            console.error('❌ Error stack:', error.stack);
         }
     };
     const handleSignOut = async ()=>{
         try {
             await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$auth$2f$authClient$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["authClient"].signOut();
+            setUser(null);
         } catch (error) {
             console.error('Sign out error:', error);
         }
     };
+    if (loading) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            children: "Loading..."
+        }, void 0, false, {
+            fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
+            lineNumber: 70,
+            columnNumber: 12
+        }, ("TURBOPACK compile-time value", void 0));
+    }
     // return
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex gap-2",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$components$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                onClick: handleGoogleSignIn,
-                children: "Sign in with Google"
-            }, void 0, false, {
-                fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-                lineNumber: 45,
-                columnNumber: 7
-            }, ("TURBOPACK compile-time value", void 0)),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$components$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                variant: "outline",
-                onClick: handleSignOut,
-                children: "Sign Out"
-            }, void 0, false, {
-                fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-                lineNumber: 46,
-                columnNumber: 7
-            }, ("TURBOPACK compile-time value", void 0))
-        ]
-    }, void 0, true, {
+        className: "flex items-center gap-2",
+        children: user ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "text-lg font-medium",
+                    children: [
+                        "Hello, ",
+                        user.name || user.email,
+                        "!"
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
+                    lineNumber: 78,
+                    columnNumber: 11
+                }, ("TURBOPACK compile-time value", void 0)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$components$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                    variant: "outline",
+                    onClick: handleSignOut,
+                    children: "Sign Out"
+                }, void 0, false, {
+                    fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
+                    lineNumber: 79,
+                    columnNumber: 11
+                }, ("TURBOPACK compile-time value", void 0))
+            ]
+        }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$components$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+            onClick: handleGoogleSignIn,
+            children: "Sign in with Google"
+        }, void 0, false, {
+            fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
+            lineNumber: 84,
+            columnNumber: 9
+        }, ("TURBOPACK compile-time value", void 0))
+    }, void 0, false, {
         fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-        lineNumber: 44,
+        lineNumber: 75,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };

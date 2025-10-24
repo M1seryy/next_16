@@ -45,10 +45,6 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$auth$2f$dist$2f$index$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/better-auth/dist/index.mjs [app-route] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$auth$2f$dist$2f$shared$2f$better$2d$auth$2e$OzOGFMdg$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__b__as__betterAuth$3e$__ = __turbopack_context__.i("[project]/node_modules/better-auth/dist/shared/better-auth.OzOGFMdg.mjs [app-route] (ecmascript) <export b as betterAuth>");
 ;
-console.log('🔐 Better Auth config loading...');
-console.log('🔐 Google Client ID:', process.env.GOOGLE_CLIENT_ID ? '✅ Set' : '❌ Missing');
-console.log('🔐 Google Client Secret:', process.env.GOOGLE_CLIENT_SECRET ? '✅ Set' : '❌ Missing');
-console.log('🔐 Auth Secret:', process.env.AUTH_SECRET ? '✅ Set' : '❌ Missing');
 const auth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$auth$2f$dist$2f$shared$2f$better$2d$auth$2e$OzOGFMdg$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__b__as__betterAuth$3e$__["betterAuth"])({
     secrets: [
         process.env.AUTH_SECRET
@@ -62,15 +58,12 @@ const auth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f
     storage: {
         sessions: new Map(),
         async getSession (id) {
-            console.log('🔐 Getting session:', id);
             return this.sessions.get(id);
         },
         async setSession (id, session) {
-            console.log('🔐 Setting session:', id, session);
             this.sessions.set(id, session);
         },
         async deleteSession (id) {
-            console.log('🔐 Deleting session:', id);
             this.sessions.delete(id);
         }
     }
@@ -88,8 +81,34 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$better$2d$auth$2f$auth$2e$config$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/pkg/integrations/better-auth/auth.config.ts [app-route] (ecmascript)");
 ;
-const GET = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$better$2d$auth$2f$auth$2e$config$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["auth"].handler;
-const POST = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$better$2d$auth$2f$auth$2e$config$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["auth"].handler;
+const GET = async (request)=>{
+    try {
+        return await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$better$2d$auth$2f$auth$2e$config$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["auth"].handler(request);
+    } catch (error) {
+        return new Response(JSON.stringify({
+            error: 'Auth GET failed'
+        }), {
+            status: 500,
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+    }
+};
+const POST = async (request)=>{
+    try {
+        return await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$better$2d$auth$2f$auth$2e$config$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["auth"].handler(request);
+    } catch (error) {
+        return new Response(JSON.stringify({
+            error: 'Auth POST failed'
+        }), {
+            status: 500,
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+    }
+};
 }),
 ];
 

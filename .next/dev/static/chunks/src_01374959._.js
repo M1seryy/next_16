@@ -1,4 +1,48 @@
 (globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/src/pkg/libraries/locale/routing.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "routing",
+    ()=>routing
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$routing$2f$defineRouting$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__defineRouting$3e$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/routing/defineRouting.js [app-client] (ecmascript) <export default as defineRouting>");
+;
+const routing = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$routing$2f$defineRouting$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__defineRouting$3e$__["defineRouting"])({
+    locales: [
+        'en',
+        'uk'
+    ],
+    localePrefix: 'as-needed',
+    localeDetection: true,
+    defaultLocale: 'en'
+});
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/pkg/libraries/locale/navigation.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Link",
+    ()=>Link,
+    "redirect",
+    ()=>redirect,
+    "usePathname",
+    ()=>usePathname,
+    "useRouter",
+    ()=>useRouter
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$navigation$2f$react$2d$client$2f$createNavigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__createNavigation$3e$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/navigation/react-client/createNavigation.js [app-client] (ecmascript) <export default as createNavigation>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$locale$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/pkg/libraries/locale/routing.ts [app-client] (ecmascript)");
+;
+;
+const { Link, redirect, usePathname, useRouter } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$navigation$2f$react$2d$client$2f$createNavigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__createNavigation$3e$__["createNavigation"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$locale$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["routing"]);
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
 "[project]/src/pkg/libraries/rest-api/fetcher/rest-api.fetcher.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -337,6 +381,24 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
+"[project]/src/app/shared/lib/utils.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "cn",
+    ()=>cn
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/tailwind-merge/dist/bundle-mjs.mjs [app-client] (ecmascript)");
+;
+;
+function cn(...inputs) {
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["twMerge"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["clsx"])(inputs));
+}
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
 "[project]/src/app/shared/ui/components/card.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -542,6 +604,577 @@ Input.displayName = 'Input';
 var _c, _c1;
 __turbopack_context__.k.register(_c, "Input$React.forwardRef");
 __turbopack_context__.k.register(_c1, "Input");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/app/shared/ui/components/label.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Label",
+    ()=>Label
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$label$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@radix-ui/react-label/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/shared/lib/utils.ts [app-client] (ecmascript)");
+'use client';
+;
+;
+;
+;
+function Label(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "0536e56fb254f61bc9bd181fcaaf6425f66f5dbbdde1d4d81e40a24883f91c88") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "0536e56fb254f61bc9bd181fcaaf6425f66f5dbbdde1d4d81e40a24883f91c88";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$label$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Root"], {
+            "data-slot": "label",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/src/app/shared/ui/components/label.tsx",
+            lineNumber: 39,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c = Label;
+;
+var _c;
+__turbopack_context__.k.register(_c, "Label");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/app/shared/ui/components/form.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Form",
+    ()=>Form,
+    "FormControl",
+    ()=>FormControl,
+    "FormDescription",
+    ()=>FormDescription,
+    "FormField",
+    ()=>FormField,
+    "FormItem",
+    ()=>FormItem,
+    "FormLabel",
+    ()=>FormLabel,
+    "FormMessage",
+    ()=>FormMessage,
+    "useFormField",
+    ()=>useFormField
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@radix-ui/react-slot/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-hook-form/dist/index.esm.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/shared/lib/utils.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$components$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/shared/ui/components/label.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature(), _s3 = __turbopack_context__.k.signature(), _s4 = __turbopack_context__.k.signature(), _s5 = __turbopack_context__.k.signature();
+'use client';
+;
+;
+;
+;
+;
+;
+const Form = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FormProvider"];
+const FormFieldContext = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createContext"](null);
+const FormField = (t0)=>{
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(10);
+    if ($[0] !== "e473701b052791d2262ef3a17d0a7e04515cd7e77f362b2d4577962ded243794") {
+        for(let $i = 0; $i < 10; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "e473701b052791d2262ef3a17d0a7e04515cd7e77f362b2d4577962ded243794";
+    }
+    let props;
+    if ($[1] !== t0) {
+        ({ ...props } = t0);
+        $[1] = t0;
+        $[2] = props;
+    } else {
+        props = $[2];
+    }
+    let t1;
+    if ($[3] !== props.name) {
+        t1 = {
+            name: props.name
+        };
+        $[3] = props.name;
+        $[4] = t1;
+    } else {
+        t1 = $[4];
+    }
+    let t2;
+    if ($[5] !== props) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Controller"], {
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/src/app/shared/ui/components/form.tsx",
+            lineNumber: 45,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[5] = props;
+        $[6] = t2;
+    } else {
+        t2 = $[6];
+    }
+    let t3;
+    if ($[7] !== t1 || $[8] !== t2) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FormFieldContext.Provider, {
+            value: t1,
+            children: t2
+        }, void 0, false, {
+            fileName: "[project]/src/app/shared/ui/components/form.tsx",
+            lineNumber: 53,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[7] = t1;
+        $[8] = t2;
+        $[9] = t3;
+    } else {
+        t3 = $[9];
+    }
+    return t3;
+};
+_c = FormField;
+const useFormField = ()=>{
+    _s();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(12);
+    if ($[0] !== "e473701b052791d2262ef3a17d0a7e04515cd7e77f362b2d4577962ded243794") {
+        for(let $i = 0; $i < 12; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "e473701b052791d2262ef3a17d0a7e04515cd7e77f362b2d4577962ded243794";
+    }
+    const fieldContext = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useContext"](FormFieldContext);
+    const itemContext = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useContext"](FormItemContext);
+    const { getFieldState, formState } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFormContext"])();
+    if (!fieldContext) {
+        throw new Error("useFormField should be used within <FormField>");
+    }
+    if (!itemContext) {
+        throw new Error("useFormField should be used within <FormItem>");
+    }
+    let t0;
+    if ($[1] !== fieldContext.name || $[2] !== formState || $[3] !== getFieldState) {
+        t0 = getFieldState(fieldContext.name, formState);
+        $[1] = fieldContext.name;
+        $[2] = formState;
+        $[3] = getFieldState;
+        $[4] = t0;
+    } else {
+        t0 = $[4];
+    }
+    const fieldState = t0;
+    const { id } = itemContext;
+    const t1 = `${id}-form-item`;
+    const t2 = `${id}-form-item-description`;
+    const t3 = `${id}-form-item-message`;
+    let t4;
+    if ($[5] !== fieldContext.name || $[6] !== fieldState || $[7] !== id || $[8] !== t1 || $[9] !== t2 || $[10] !== t3) {
+        t4 = {
+            id,
+            name: fieldContext.name,
+            formItemId: t1,
+            formDescriptionId: t2,
+            formMessageId: t3,
+            ...fieldState
+        };
+        $[5] = fieldContext.name;
+        $[6] = fieldState;
+        $[7] = id;
+        $[8] = t1;
+        $[9] = t2;
+        $[10] = t3;
+        $[11] = t4;
+    } else {
+        t4 = $[11];
+    }
+    return t4;
+};
+_s(useFormField, "i3mwSkyn/zZttIFOcYbNgQbBbtA=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFormContext"]
+    ];
+});
+const FormItemContext = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createContext"](null);
+const FormItem = /*#__PURE__*/ _s1(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"](_c1 = _s1((t0, ref)=>{
+    _s1();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(15);
+    if ($[0] !== "e473701b052791d2262ef3a17d0a7e04515cd7e77f362b2d4577962ded243794") {
+        for(let $i = 0; $i < 15; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "e473701b052791d2262ef3a17d0a7e04515cd7e77f362b2d4577962ded243794";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    const id = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useId"]();
+    let t1;
+    if ($[4] !== id) {
+        t1 = {
+            id
+        };
+        $[4] = id;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== className) {
+        t2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("space-y-2", className);
+        $[6] = className;
+        $[7] = t2;
+    } else {
+        t2 = $[7];
+    }
+    let t3;
+    if ($[8] !== props || $[9] !== ref || $[10] !== t2) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            ref: ref,
+            className: t2,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/src/app/shared/ui/components/form.tsx",
+            lineNumber: 168,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[8] = props;
+        $[9] = ref;
+        $[10] = t2;
+        $[11] = t3;
+    } else {
+        t3 = $[11];
+    }
+    let t4;
+    if ($[12] !== t1 || $[13] !== t3) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FormItemContext.Provider, {
+            value: t1,
+            children: t3
+        }, void 0, false, {
+            fileName: "[project]/src/app/shared/ui/components/form.tsx",
+            lineNumber: 178,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[12] = t1;
+        $[13] = t3;
+        $[14] = t4;
+    } else {
+        t4 = $[14];
+    }
+    return t4;
+}, "WhsuKpSQZEWeFcB7gWlfDRQktoQ=")), "WhsuKpSQZEWeFcB7gWlfDRQktoQ=");
+_c2 = FormItem;
+FormItem.displayName = 'FormItem';
+const FormLabel = /*#__PURE__*/ _s2(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"](_c3 = _s2((t0, ref)=>{
+    _s2();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(12);
+    if ($[0] !== "e473701b052791d2262ef3a17d0a7e04515cd7e77f362b2d4577962ded243794") {
+        for(let $i = 0; $i < 12; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "e473701b052791d2262ef3a17d0a7e04515cd7e77f362b2d4577962ded243794";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    const { error, formItemId } = useFormField();
+    const t1 = error && "text-destructive";
+    let t2;
+    if ($[4] !== className || $[5] !== t1) {
+        t2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])(t1, className);
+        $[4] = className;
+        $[5] = t1;
+        $[6] = t2;
+    } else {
+        t2 = $[6];
+    }
+    let t3;
+    if ($[7] !== formItemId || $[8] !== props || $[9] !== ref || $[10] !== t2) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$components$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+            ref: ref,
+            className: t2,
+            htmlFor: formItemId,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/src/app/shared/ui/components/form.tsx",
+            lineNumber: 226,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[7] = formItemId;
+        $[8] = props;
+        $[9] = ref;
+        $[10] = t2;
+        $[11] = t3;
+    } else {
+        t3 = $[11];
+    }
+    return t3;
+}, "6nJi5+0ht8NaLdkbuTjIjyM1SHQ=", false, function() {
+    return [
+        useFormField
+    ];
+})), "6nJi5+0ht8NaLdkbuTjIjyM1SHQ=", false, function() {
+    return [
+        useFormField
+    ];
+});
+_c4 = FormLabel;
+FormLabel.displayName = 'FormLabel';
+const FormControl = /*#__PURE__*/ _s3(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"](_c5 = _s3((t0, ref)=>{
+    _s3();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "e473701b052791d2262ef3a17d0a7e04515cd7e77f362b2d4577962ded243794") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "e473701b052791d2262ef3a17d0a7e04515cd7e77f362b2d4577962ded243794";
+    }
+    let props;
+    if ($[1] !== t0) {
+        ({ ...props } = t0);
+        $[1] = t0;
+        $[2] = props;
+    } else {
+        props = $[2];
+    }
+    const { error, formItemId, formDescriptionId, formMessageId } = useFormField();
+    const t1 = !error ? `${formDescriptionId}` : `${formDescriptionId} ${formMessageId}`;
+    const t2 = !!error;
+    let t3;
+    if ($[3] !== formItemId || $[4] !== props || $[5] !== ref || $[6] !== t1 || $[7] !== t2) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Slot"], {
+            ref: ref,
+            id: formItemId,
+            "aria-describedby": t1,
+            "aria-invalid": t2,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/src/app/shared/ui/components/form.tsx",
+            lineNumber: 266,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[3] = formItemId;
+        $[4] = props;
+        $[5] = ref;
+        $[6] = t1;
+        $[7] = t2;
+        $[8] = t3;
+    } else {
+        t3 = $[8];
+    }
+    return t3;
+}, "geL1jB2JIreVwJlksk1kbPmXDq0=", false, function() {
+    return [
+        useFormField
+    ];
+})), "geL1jB2JIreVwJlksk1kbPmXDq0=", false, function() {
+    return [
+        useFormField
+    ];
+});
+_c6 = FormControl;
+FormControl.displayName = 'FormControl';
+const FormDescription = /*#__PURE__*/ _s4(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"](_c7 = _s4((t0, ref)=>{
+    _s4();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
+    if ($[0] !== "e473701b052791d2262ef3a17d0a7e04515cd7e77f362b2d4577962ded243794") {
+        for(let $i = 0; $i < 11; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "e473701b052791d2262ef3a17d0a7e04515cd7e77f362b2d4577962ded243794";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    const { formDescriptionId } = useFormField();
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("text-muted-foreground text-[0.8rem]", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== formDescriptionId || $[7] !== props || $[8] !== ref || $[9] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+            ref: ref,
+            id: formDescriptionId,
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/src/app/shared/ui/components/form.tsx",
+            lineNumber: 314,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[6] = formDescriptionId;
+        $[7] = props;
+        $[8] = ref;
+        $[9] = t1;
+        $[10] = t2;
+    } else {
+        t2 = $[10];
+    }
+    return t2;
+}, "Er5/43qZF8nEMcxi7fHV3wUpykc=", false, function() {
+    return [
+        useFormField
+    ];
+})), "Er5/43qZF8nEMcxi7fHV3wUpykc=", false, function() {
+    return [
+        useFormField
+    ];
+});
+_c8 = FormDescription;
+FormDescription.displayName = 'FormDescription';
+const FormMessage = /*#__PURE__*/ _s5(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"](_c9 = _s5((t0, ref)=>{
+    _s5();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(13);
+    if ($[0] !== "e473701b052791d2262ef3a17d0a7e04515cd7e77f362b2d4577962ded243794") {
+        for(let $i = 0; $i < 13; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "e473701b052791d2262ef3a17d0a7e04515cd7e77f362b2d4577962ded243794";
+    }
+    let children;
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, children, ...props } = t0);
+        $[1] = t0;
+        $[2] = children;
+        $[3] = className;
+        $[4] = props;
+    } else {
+        children = $[2];
+        className = $[3];
+        props = $[4];
+    }
+    const { error, formMessageId } = useFormField();
+    const body = error ? String(error?.message ?? "") : children;
+    if (!body) {
+        return null;
+    }
+    let t1;
+    if ($[5] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("text-destructive text-[0.8rem] font-medium", className);
+        $[5] = className;
+        $[6] = t1;
+    } else {
+        t1 = $[6];
+    }
+    let t2;
+    if ($[7] !== body || $[8] !== formMessageId || $[9] !== props || $[10] !== ref || $[11] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+            ref: ref,
+            id: formMessageId,
+            className: t1,
+            ...props,
+            children: body
+        }, void 0, false, {
+            fileName: "[project]/src/app/shared/ui/components/form.tsx",
+            lineNumber: 370,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[7] = body;
+        $[8] = formMessageId;
+        $[9] = props;
+        $[10] = ref;
+        $[11] = t1;
+        $[12] = t2;
+    } else {
+        t2 = $[12];
+    }
+    return t2;
+}, "xiIefB+/BZkxraYxNBWaPqgcLFA=", false, function() {
+    return [
+        useFormField
+    ];
+})), "xiIefB+/BZkxraYxNBWaPqgcLFA=", false, function() {
+    return [
+        useFormField
+    ];
+});
+_c10 = FormMessage;
+FormMessage.displayName = 'FormMessage';
+;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10;
+__turbopack_context__.k.register(_c, "FormField");
+__turbopack_context__.k.register(_c1, "FormItem$React.forwardRef");
+__turbopack_context__.k.register(_c2, "FormItem");
+__turbopack_context__.k.register(_c3, "FormLabel$React.forwardRef");
+__turbopack_context__.k.register(_c4, "FormLabel");
+__turbopack_context__.k.register(_c5, "FormControl$React.forwardRef");
+__turbopack_context__.k.register(_c6, "FormControl");
+__turbopack_context__.k.register(_c7, "FormDescription$React.forwardRef");
+__turbopack_context__.k.register(_c8, "FormDescription");
+__turbopack_context__.k.register(_c9, "FormMessage$React.forwardRef");
+__turbopack_context__.k.register(_c10, "FormMessage");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
@@ -973,49 +1606,34 @@ const AuthBlockComponent = ()=>{
     _s();
     const [user, setUser] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    const checkAuth = async ()=>{
+        try {
+            const session = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$auth$2f$authClient$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["authClient"].getSession();
+            if (session && 'data' in session && session.data) {
+                setUser(session.data.user || null);
+            } else {
+                setUser(null);
+            }
+        } catch (error) {} finally{
+            setLoading(false);
+        }
+    };
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "AuthBlockComponent.useEffect": ()=>{
-            const checkAuth = {
-                "AuthBlockComponent.useEffect.checkAuth": async ()=>{
-                    try {
-                        const session = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$auth$2f$authClient$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["authClient"].getSession();
-                        console.log('🔐 Current session:', session);
-                        if (session && 'data' in session && session.data) {
-                            setUser(session.data.user || null);
-                        } else {
-                            setUser(null);
-                        }
-                    } catch (error) {
-                        console.error('❌ Auth check error:', error);
-                        setUser(null);
-                    } finally{
-                        setLoading(false);
-                    }
-                }
-            }["AuthBlockComponent.useEffect.checkAuth"];
             checkAuth();
-            // Перевіряємо стан кожні 2 секунди (для тестування)
-            const interval = setInterval(checkAuth, 2000);
-            return ({
-                "AuthBlockComponent.useEffect": ()=>clearInterval(interval)
-            })["AuthBlockComponent.useEffect"];
         }
     }["AuthBlockComponent.useEffect"], []);
     const handleGoogleSignIn = async ()=>{
         try {
-            console.log('🔐 Starting Google sign in...');
             const result = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$auth$2f$authClient$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["authClient"].signIn.social({
                 provider: 'google',
                 callbackURL: '/'
             });
-            console.log('🔐 Sign in result:', result);
             // Перевіряємо стан після входу
             if (result && 'user' in result) {
                 setUser(result.user);
             }
-        } catch (error_0) {
-            console.error('❌ Google sign in error:', error_0);
-        }
+        } catch (error_0) {}
     };
     const handleSignOut = async ()=>{
         try {
@@ -1030,7 +1648,7 @@ const AuthBlockComponent = ()=>{
             children: "Loading..."
         }, void 0, false, {
             fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-            lineNumber: 63,
+            lineNumber: 51,
             columnNumber: 12
         }, ("TURBOPACK compile-time value", void 0));
     }
@@ -1048,7 +1666,7 @@ const AuthBlockComponent = ()=>{
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-                    lineNumber: 69,
+                    lineNumber: 57,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$components$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1057,7 +1675,7 @@ const AuthBlockComponent = ()=>{
                     children: "Sign Out"
                 }, void 0, false, {
                     fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-                    lineNumber: 70,
+                    lineNumber: 58,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0))
             ]
@@ -1066,12 +1684,12 @@ const AuthBlockComponent = ()=>{
             children: "Sign in with Google"
         }, void 0, false, {
             fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-            lineNumber: 73,
+            lineNumber: 61,
             columnNumber: 15
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-        lineNumber: 67,
+        lineNumber: 55,
         columnNumber: 10
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -1109,34 +1727,223 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/src/app/features/block/books-list-block/books-list-block.component.tsx [app-client] (ecmascript) <export default as BooksListBlockComponent>", ((__turbopack_context__) => {
+"[project]/src/app/features/block/auth-block/auth-block.component.tsx [app-client] (ecmascript) <export default as AuthBlockComponent>", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
-    "BooksListBlockComponent",
-    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$books$2d$list$2d$block$2f$books$2d$list$2d$block$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+    "AuthBlockComponent",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$auth$2d$block$2f$auth$2d$block$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$books$2d$list$2d$block$2f$books$2d$list$2d$block$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/features/block/books-list-block/books-list-block.component.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$auth$2d$block$2f$auth$2d$block$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/features/block/auth-block/auth-block.component.tsx [app-client] (ecmascript)");
 }),
-"[project]/src/app/features/block/search-form-block/search-form-block.component.tsx [app-client] (ecmascript) <export default as SearchFormBlockComponent>", ((__turbopack_context__) => {
+"[project]/src/app/widgets/header/header.component.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
-    "SearchFormBlockComponent",
-    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$search$2d$form$2d$block$2f$search$2d$form$2d$block$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+    "default",
+    ()=>__TURBOPACK__default__export__
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$search$2d$form$2d$block$2f$search$2d$form$2d$block$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/features/block/search-form-block/search-form-block.component.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/react-client/index.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$locale$2f$navigation$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/pkg/libraries/locale/navigation.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/src/app/features/block/index.ts [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$auth$2d$block$2f$auth$2d$block$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AuthBlockComponent$3e$__ = __turbopack_context__.i("[project]/src/app/features/block/auth-block/auth-block.component.tsx [app-client] (ecmascript) <export default as AuthBlockComponent>");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+;
+;
+// component
+const HeaderComponent = ()=>{
+    _s();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "44f33e7042fd073f5b7bdc59141b8577ebcb7f5b95acd64613a16363064c777f") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "44f33e7042fd073f5b7bdc59141b8577ebcb7f5b95acd64613a16363064c777f";
+    }
+    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useTranslations"])();
+    let t0;
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+        t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$locale$2f$navigation$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Link"], {
+            href: "/",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                className: "text-4xl",
+                children: "Book Store"
+            }, void 0, false, {
+                fileName: "[project]/src/app/widgets/header/header.component.tsx",
+                lineNumber: 24,
+                columnNumber: 25
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
+            fileName: "[project]/src/app/widgets/header/header.component.tsx",
+            lineNumber: 24,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[1] = t0;
+    } else {
+        t0 = $[1];
+    }
+    let t1;
+    if ($[2] !== t) {
+        t1 = t("navigation.home");
+        $[2] = t;
+        $[3] = t1;
+    } else {
+        t1 = $[3];
+    }
+    let t2;
+    if ($[4] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+            className: "text-xl",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$locale$2f$navigation$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Link"], {
+                href: "/",
+                children: t1
+            }, void 0, false, {
+                fileName: "[project]/src/app/widgets/header/header.component.tsx",
+                lineNumber: 39,
+                columnNumber: 34
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
+            fileName: "[project]/src/app/widgets/header/header.component.tsx",
+            lineNumber: 39,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[4] = t1;
+        $[5] = t2;
+    } else {
+        t2 = $[5];
+    }
+    let t3;
+    if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$auth$2d$block$2f$auth$2d$block$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__AuthBlockComponent$3e$__["AuthBlockComponent"], {}, void 0, false, {
+                fileName: "[project]/src/app/widgets/header/header.component.tsx",
+                lineNumber: 47,
+                columnNumber: 14
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
+            fileName: "[project]/src/app/widgets/header/header.component.tsx",
+            lineNumber: 47,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[6] = t3;
+    } else {
+        t3 = $[6];
+    }
+    let t4;
+    if ($[7] !== t2) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "m-auto mt-3.5 flex w-[1280px] flex-col",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mx-auto flex w-full items-center justify-between px-4 md:px-6",
+                children: [
+                    t0,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                            className: "flex items-center gap-5",
+                            children: [
+                                t2,
+                                t3
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/widgets/header/header.component.tsx",
+                            lineNumber: 54,
+                            columnNumber: 154
+                        }, ("TURBOPACK compile-time value", void 0))
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/widgets/header/header.component.tsx",
+                        lineNumber: 54,
+                        columnNumber: 149
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/widgets/header/header.component.tsx",
+                lineNumber: 54,
+                columnNumber: 66
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
+            fileName: "[project]/src/app/widgets/header/header.component.tsx",
+            lineNumber: 54,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[7] = t2;
+        $[8] = t4;
+    } else {
+        t4 = $[8];
+    }
+    return t4;
+};
+_s(HeaderComponent, "h6+q2O3NJKPY5uL0BIJGLIanww8=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useTranslations"]
+    ];
+});
+_c = HeaderComponent;
+const __TURBOPACK__default__export__ = HeaderComponent;
+var _c;
+__turbopack_context__.k.register(_c, "HeaderComponent");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
 }),
-"[project]/src/app/shared/ui/banner/banner.component.tsx [app-client] (ecmascript) <export default as BannerComponent>", ((__turbopack_context__) => {
+"[project]/src/pkg/libraries/rest-api/service/rest-api.service.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
-    "BannerComponent",
-    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$banner$2f$banner$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+    "getQueryClient",
+    ()=>getQueryClient
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$banner$2f$banner$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/shared/ui/banner/banner.component.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$hydration$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/query-core/build/modern/hydration.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/query-core/build/modern/utils.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$queryClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/query-core/build/modern/queryClient.js [app-client] (ecmascript)");
+;
+let browserQueryClient = undefined;
+// make query client
+const makeQueryClient = ()=>{
+    return new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$queryClient$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["QueryClient"]({
+        defaultOptions: {
+            queries: {
+                staleTime: 60 * 1000,
+                networkMode: 'offlineFirst',
+                refetchOnWindowFocus: false,
+                placeholderData: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["keepPreviousData"]
+            },
+            dehydrate: {
+                shouldDehydrateQuery: (query)=>{
+                    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$hydration$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defaultShouldDehydrateQuery"])(query) || query.state.status === 'pending';
+                }
+            }
+        }
+    });
+};
+const getQueryClient = ()=>{
+    if (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$query$2d$core$2f$build$2f$modern$2f$utils$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isServer"]) {
+        return makeQueryClient();
+    } else {
+        if (!browserQueryClient) browserQueryClient = makeQueryClient();
+        return browserQueryClient;
+    }
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
 }),
-"[project]/src/app/modules/home/home.module.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/src/pkg/libraries/rest-api/service/index.ts [app-client] (ecmascript) <locals>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$rest$2d$api$2f$service$2f$rest$2d$api$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/pkg/libraries/rest-api/service/rest-api.service.ts [app-client] (ecmascript)");
+;
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/pkg/libraries/rest-api/rest-api.provider.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -1146,12 +1953,10 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/src/app/features/block/index.ts [app-client] (ecmascript) <locals>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$books$2d$list$2d$block$2f$books$2d$list$2d$block$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BooksListBlockComponent$3e$__ = __turbopack_context__.i("[project]/src/app/features/block/books-list-block/books-list-block.component.tsx [app-client] (ecmascript) <export default as BooksListBlockComponent>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$search$2d$form$2d$block$2f$search$2d$form$2d$block$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SearchFormBlockComponent$3e$__ = __turbopack_context__.i("[project]/src/app/features/block/search-form-block/search-form-block.component.tsx [app-client] (ecmascript) <export default as SearchFormBlockComponent>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/src/app/shared/ui/index.ts [app-client] (ecmascript) <locals>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$banner$2f$banner$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BannerComponent$3e$__ = __turbopack_context__.i("[project]/src/app/shared/ui/banner/banner.component.tsx [app-client] (ecmascript) <export default as BannerComponent>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/react-client/index.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2d$devtools$2f$build$2f$modern$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query-devtools/build/modern/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$rest$2d$api$2f$service$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/src/pkg/libraries/rest-api/service/index.ts [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$rest$2d$api$2f$service$2f$rest$2d$api$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/pkg/libraries/rest-api/service/rest-api.service.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
@@ -1161,172 +1966,63 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 // component
-const HomeModule = (props)=>{
+const RestApiProvider = (props)=>{
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(21);
-    if ($[0] !== "c50aebbeb9992a1eef2eaa8f34ec4bcd6a5741f33404afd63d806baf929f58f9") {
-        for(let $i = 0; $i < 21; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
+    if ($[0] !== "2de02b43f65667bafbba75f02346e347fdb3bf2497395bbc8d8c877132acc27b") {
+        for(let $i = 0; $i < 5; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "c50aebbeb9992a1eef2eaa8f34ec4bcd6a5741f33404afd63d806baf929f58f9";
+        $[0] = "2de02b43f65667bafbba75f02346e347fdb3bf2497395bbc8d8c877132acc27b";
     }
-    const { searchQuery: t0 } = props;
-    const initialSearchQuery = t0 === undefined ? "" : t0;
-    const [searchQuery, setSearchQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(initialSearchQuery);
-    const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useTranslations"])();
-    let t1;
+    const { children } = props;
+    const [queryClient] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(_temp);
+    let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
-        t1 = (query)=>{
-            setSearchQuery(query);
-        };
-        $[1] = t1;
-    } else {
-        t1 = $[1];
-    }
-    const handleSearch = t1;
-    let t2;
-    if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
-        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$banner$2f$banner$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BannerComponent$3e$__["BannerComponent"], {}, void 0, false, {
-            fileName: "[project]/src/app/modules/home/home.module.tsx",
-            lineNumber: 41,
-            columnNumber: 10
-        }, ("TURBOPACK compile-time value", void 0));
-        $[2] = t2;
-    } else {
-        t2 = $[2];
-    }
-    let t3;
-    if ($[3] !== t) {
-        t3 = t("home.title");
-        $[3] = t;
-        $[4] = t3;
-    } else {
-        t3 = $[4];
-    }
-    let t4;
-    if ($[5] !== t3) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-            className: "text-2xl font-bold",
-            children: t3
+        t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2d$devtools$2f$build$2f$modern$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ReactQueryDevtools"], {
+            initialIsOpen: false
         }, void 0, false, {
-            fileName: "[project]/src/app/modules/home/home.module.tsx",
-            lineNumber: 56,
+            fileName: "[project]/src/pkg/libraries/rest-api/rest-api.provider.tsx",
+            lineNumber: 30,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
-        $[5] = t3;
-        $[6] = t4;
+        $[1] = t0;
     } else {
-        t4 = $[6];
+        t0 = $[1];
     }
-    let t5;
-    if ($[7] !== t) {
-        t5 = t("home.subtitle");
-        $[7] = t;
-        $[8] = t5;
-    } else {
-        t5 = $[8];
-    }
-    let t6;
-    if ($[9] !== t5) {
-        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-            children: t5
-        }, void 0, false, {
-            fileName: "[project]/src/app/modules/home/home.module.tsx",
-            lineNumber: 72,
-            columnNumber: 10
-        }, ("TURBOPACK compile-time value", void 0));
-        $[9] = t5;
-        $[10] = t6;
-    } else {
-        t6 = $[10];
-    }
-    let t7;
-    if ($[11] !== t4 || $[12] !== t6) {
-        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t1;
+    if ($[2] !== children || $[3] !== queryClient) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["QueryClientProvider"], {
+            client: queryClient,
             children: [
-                t2,
-                t4,
-                t6
+                children,
+                t0
             ]
         }, void 0, true, {
-            fileName: "[project]/src/app/modules/home/home.module.tsx",
-            lineNumber: 80,
+            fileName: "[project]/src/pkg/libraries/rest-api/rest-api.provider.tsx",
+            lineNumber: 37,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
-        $[11] = t4;
-        $[12] = t6;
-        $[13] = t7;
+        $[2] = children;
+        $[3] = queryClient;
+        $[4] = t1;
     } else {
-        t7 = $[13];
+        t1 = $[4];
     }
-    let t8;
-    let t9;
-    if ($[14] !== searchQuery) {
-        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "flex justify-center",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$search$2d$form$2d$block$2f$search$2d$form$2d$block$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SearchFormBlockComponent$3e$__["SearchFormBlockComponent"], {
-                onSearch: handleSearch,
-                initialValue: searchQuery
-            }, void 0, false, {
-                fileName: "[project]/src/app/modules/home/home.module.tsx",
-                lineNumber: 90,
-                columnNumber: 47
-            }, ("TURBOPACK compile-time value", void 0))
-        }, void 0, false, {
-            fileName: "[project]/src/app/modules/home/home.module.tsx",
-            lineNumber: 90,
-            columnNumber: 10
-        }, ("TURBOPACK compile-time value", void 0));
-        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$books$2d$list$2d$block$2f$books$2d$list$2d$block$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BooksListBlockComponent$3e$__["BooksListBlockComponent"], {
-            searchQuery: searchQuery
-        }, void 0, false, {
-            fileName: "[project]/src/app/modules/home/home.module.tsx",
-            lineNumber: 91,
-            columnNumber: 10
-        }, ("TURBOPACK compile-time value", void 0));
-        $[14] = searchQuery;
-        $[15] = t8;
-        $[16] = t9;
-    } else {
-        t8 = $[15];
-        t9 = $[16];
-    }
-    let t10;
-    if ($[17] !== t7 || $[18] !== t8 || $[19] !== t9) {
-        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "space-y-6",
-            children: [
-                t7,
-                t8,
-                t9
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/app/modules/home/home.module.tsx",
-            lineNumber: 101,
-            columnNumber: 11
-        }, ("TURBOPACK compile-time value", void 0));
-        $[17] = t7;
-        $[18] = t8;
-        $[19] = t9;
-        $[20] = t10;
-    } else {
-        t10 = $[20];
-    }
-    return t10;
+    return t1;
 };
-_s(HomeModule, "6KXaXGFRx0aVSPRAGNxBF1V2QDs=", false, function() {
-    return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useTranslations"]
-    ];
-});
-_c = HomeModule;
-const __TURBOPACK__default__export__ = HomeModule;
+_s(RestApiProvider, "84RamV0LPzLFoww5OLNrWKh+aZU=");
+_c = RestApiProvider;
+const __TURBOPACK__default__export__ = RestApiProvider;
+function _temp() {
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$rest$2d$api$2f$service$2f$rest$2d$api$2e$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getQueryClient"])();
+}
 var _c;
-__turbopack_context__.k.register(_c, "HomeModule");
+__turbopack_context__.k.register(_c, "RestApiProvider");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
 ]);
 
-//# sourceMappingURL=src_58a4bca6._.js.map
+//# sourceMappingURL=src_01374959._.js.map

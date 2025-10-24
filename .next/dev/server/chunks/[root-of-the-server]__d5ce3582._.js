@@ -273,6 +273,7 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$auth$2f$dist$2f$index$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/better-auth/dist/index.mjs [app-route] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$auth$2f$dist$2f$shared$2f$better$2d$auth$2e$OzOGFMdg$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__b__as__betterAuth$3e$__ = __turbopack_context__.i("[project]/node_modules/better-auth/dist/shared/better-auth.OzOGFMdg.mjs [app-route] (ecmascript) <export b as betterAuth>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$auth$2f$dist$2f$adapters$2f$drizzle$2d$adapter$2f$index$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/better-auth/dist/adapters/drizzle-adapter/index.mjs [app-route] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$index$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/src/pkg/integrations/supabase/index.ts [app-route] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$drizzle$2e$server$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/pkg/integrations/supabase/drizzle.server.ts [app-route] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$index$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/src/pkg/integrations/supabase/schemas/index.ts [app-route] (ecmascript) <locals>");
@@ -280,14 +281,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2
 ;
 ;
 ;
-console.log('🔐 Better Auth config loading...');
-console.log('🔐 Google Client ID:', process.env.GOOGLE_CLIENT_ID ? '✅ Set' : '❌ Missing');
-console.log('🔐 Google Client Secret:', process.env.GOOGLE_CLIENT_SECRET ? '✅ Set' : '❌ Missing');
-console.log('🔐 Auth Secret:', process.env.AUTH_SECRET ? '✅ Set' : '❌ Missing');
-console.log('🔐 Database connection:', !!__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$drizzle$2e$server$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"]);
-console.log('🔐 Users schema:', !!__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["users"]);
-console.log('🔐 Sessions schema:', !!__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["sessions"]);
-console.log('🔐 Accounts schema:', !!__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["accounts"]);
+;
 const auth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$auth$2f$dist$2f$shared$2f$better$2d$auth$2e$OzOGFMdg$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__b__as__betterAuth$3e$__["betterAuth"])({
     secrets: [
         process.env.AUTH_SECRET
@@ -298,23 +292,20 @@ const auth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f
             clientSecret: process.env.GOOGLE_CLIENT_SECRET
         }
     },
-    storage: {
-        sessions: new Map(),
-        async getSession (id) {
-            console.log('🔐 Getting session:', id);
-            return this.sessions.get(id);
-        },
-        async setSession (id, session) {
-            console.log('🔐 Setting session:', id, session);
-            this.sessions.set(id, session);
-        },
-        async deleteSession (id) {
-            console.log('🔐 Deleting session:', id);
-            this.sessions.delete(id);
+    database: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$better$2d$auth$2f$dist$2f$adapters$2f$drizzle$2d$adapter$2f$index$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__["drizzleAdapter"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$drizzle$2e$server$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"], {
+        provider: "pg",
+        schema: {
+            users: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["users"],
+            sessions: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["sessions"],
+            accounts: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$supabase$2f$schemas$2f$users$2e$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["accounts"]
         }
+    }),
+    logger: {
+        level: "debug",
+        disabled: false
     }
 });
-console.log('🔐 Better Auth configured with Map storage');
+console.log('🔐 Better Auth configured with Drizzle database adapter');
 }),
 "[project]/src/app/api/auth/[...all]/route.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -329,10 +320,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2
 ;
 const GET = async (request)=>{
     try {
-        console.log('🔐 Auth GET request:', request.url);
         return await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$better$2d$auth$2f$auth$2e$config$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["auth"].handler(request);
     } catch (error) {
-        console.error('❌ Auth GET error:', error);
         return new Response(JSON.stringify({
             error: 'Auth GET failed'
         }), {
@@ -345,10 +334,8 @@ const GET = async (request)=>{
 };
 const POST = async (request)=>{
     try {
-        console.log('🔐 Auth POST request:', request.url);
         return await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$integrations$2f$better$2d$auth$2f$auth$2e$config$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["auth"].handler(request);
     } catch (error) {
-        console.error('❌ Auth POST error:', error);
         return new Response(JSON.stringify({
             error: 'Auth POST failed'
         }), {
