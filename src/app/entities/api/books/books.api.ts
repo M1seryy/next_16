@@ -8,7 +8,7 @@ export const booksQueryApi = async (opt: QueryFunctionContext, queryParams?: { s
   const { search } = queryParams || {}
 
   const hasSearch = search && search.trim().length > 0
-  const url = hasSearch ? `api/books?search=${encodeURIComponent(search.trim())}` : 'api/books'
+  const url = hasSearch ? `api/proxy/books?search=${encodeURIComponent(search.trim())}` : 'api/proxy/books'
 
   const res = await restApiFetcher
     .get<IBook[]>(url, {
