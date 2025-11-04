@@ -4,6 +4,7 @@ import { type FC } from 'react'
 
 import { useBooksQuery } from '@/app/entities/api/books/books.query'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app/shared/ui'
+import { Link } from '@/pkg/libraries/locale/navigation'
 
 // interface
 interface IProps {
@@ -54,16 +55,18 @@ const BooksListBlockComponent: FC<Readonly<IProps>> = (props) => {
       ) : (
         <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
           {books?.map((book) => (
-            <Card key={book.id}>
-              <CardHeader>
-                <CardTitle className='text-lg'>{book.title}</CardTitle>
-                <CardDescription>by {book.author}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className='text-muted-foreground text-sm'>Published: {book.publishedYear}</p>
-                {book.description && <p className='text-muted-foreground mt-2 text-sm'>{book.description}</p>}
-              </CardContent>
-            </Card>
+            <Link key={book.id} href={`/${book.id}`}>
+              <Card className='hover:bg-accent cursor-pointer transition-colors'>
+                <CardHeader>
+                  <CardTitle className='text-lg'>{book.title}</CardTitle>
+                  <CardDescription>by {book.author}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className='text-muted-foreground text-sm'>Published: {book.publishedYear}</p>
+                  {book.description && <p className='text-muted-foreground mt-2 text-sm'>{book.description}</p>}
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
       )}

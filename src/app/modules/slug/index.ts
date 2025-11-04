@@ -1,0 +1,1 @@
+export { default as SlugModule } from './slug.module'
