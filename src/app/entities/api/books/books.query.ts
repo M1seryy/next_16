@@ -9,9 +9,10 @@ export const booksQueryKeys = {
 }
 
 // Hooks
-export const useBooksQuery = (searchQuery?: string) => {
+export const useBooksQuery = (searchQuery?: string, options?: { enabled?: boolean }) => {
   return useQuery({
     queryKey: booksQueryKeys.search(searchQuery),
     queryFn: (opt) => booksQueryApi(opt, { search: searchQuery }),
+    enabled: options?.enabled !== false,
   })
 }

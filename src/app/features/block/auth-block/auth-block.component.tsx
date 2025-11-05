@@ -2,9 +2,14 @@
 
 import { type FC, useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
+import { useQueryClient } from '@tanstack/react-query'
+
+import { useRouter } from 'next/navigation'
 
 import { authClient } from '@/app/entities/auth/authClient'
-import { useUserQuery } from '@/app/entities/api/user'
+import { useUserQuery, userQueryKeys } from '@/app/entities/api/user'
+import { booksQueryKeys } from '@/app/entities/api/books/books.query'
+import { favoritesKeys } from '@/app/entities/api/favorites/favorites.query'
 import { Button } from '@/app/shared/ui'
 
 // interface
@@ -15,6 +20,8 @@ const AuthBlockComponent: FC<Readonly<IProps>> = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [loading, setLoading] = useState(true)
   const t = useTranslations('Auth')
+  const queryClient = useQueryClient()
+  const router = useRouter()
 
   const { data: user, isLoading: userLoading, error } = useUserQuery()
 
@@ -68,6 +75,22 @@ const AuthBlockComponent: FC<Readonly<IProps>> = () => {
     try {
       await authClient.signOut()
       setIsAuthenticated(false)
+
+      // Clear all cache
+      queryClient.clear()
+
+      queryClient.setQueryData(userQueryKeys.current(), null)
+
+      queryClient.setQueryData(booksQueryKeys.all, undefined)
+      queryClient.setQueryData(favoritesKeys.all, undefined)
+
+      // Invalidate all queries
+      await queryClient.invalidateQueries({ queryKey: ['user'] })
+      await queryClient.invalidateQueries({ queryKey: booksQueryKeys.all })
+      await queryClient.invalidateQueries({ queryKey: favoritesKeys.all })
+
+      // Redirect to signin
+      router.push('/signin')
     } catch (_error) {}
   }
 

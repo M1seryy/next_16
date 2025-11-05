@@ -12,7 +12,7 @@ export const auth = betterAuth({
             user: users,
             session: sessions,
             account: accounts,
-            verification,
+            verification: verification,
         },
     }),
     socialProviders: {

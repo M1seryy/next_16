@@ -1,11 +1,17 @@
 import { ilike, or } from 'drizzle-orm'
 import { NextRequest, NextResponse } from 'next/server'
 
+import { auth } from '@/pkg/integrations/better-auth/auth.config'
 import { db } from '@/pkg/integrations/supabase/drizzle'
 import { books } from '@/pkg/integrations/supabase/schemas'
 
 export async function GET(request: NextRequest) {
   try {
+    const session = await auth.api.getSession({ headers: request.headers })
+    if (!session) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    }
+
     const { searchParams } = new URL(request.url)
     const searchQuery = searchParams.get('search')
 

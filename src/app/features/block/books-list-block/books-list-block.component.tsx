@@ -4,9 +4,9 @@ import { type FC } from 'react'
 
 import { useBooksQuery } from '@/app/entities/api/books/books.query'
 import { useFavoritesQuery, useToggleFavoriteMutation } from '@/app/entities/api/favorites/favorites.query'
+import { useUserQuery } from '@/app/entities/api/user/user.query'
 import { CustomCardComponent } from '@/app/shared/ui/components/custom-card'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, Skeleton } from '@/app/shared/ui'
-import { Link } from '@/pkg/libraries/locale/navigation'
 
 // interface
 interface IProps {
@@ -17,10 +17,42 @@ interface IProps {
 const BooksListBlockComponent: FC<Readonly<IProps>> = (props) => {
   const { searchQuery = '' } = props
 
-  const { data: books, isLoading, error } = useBooksQuery(searchQuery)
+  const { data: user, isLoading: userLoading, error: userError } = useUserQuery()
+  const { data: books, isLoading, error } = useBooksQuery(searchQuery, { enabled: !!user })
   const { data: favorites } = useFavoritesQuery()
   const toggleFavorite = useToggleFavoriteMutation()
 
+  const favoritesList = Array.isArray(favorites) ? favorites : []
+
+  if (!user || userError) {
+    return (
+      <div className='space-y-4'>
+        <h2 className='text-xl font-semibold'>Books from Database</h2>
+        <Card>
+          <CardContent className='pt-6'>
+            <div className='text-muted-foreground text-center'>Please sign in to view books</div>
+          </CardContent>
+        </Card>
+      </div>
+    )
+  }
+
+  if (userLoading) {
+    return (
+      <div className='space-y-4'>
+        <h2 className='text-xl font-semibold'>Books from Database</h2>
+        <div className='flex justify-center py-8'>
+          <Card className='w-64'>
+            <CardContent className='pt-6'>
+              <div className='text-muted-foreground text-center'>Loading...</div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    )
+  }
+
+  // Show loading state
   if (isLoading) {
     return (
       <div className='space-y-4'>
@@ -81,9 +113,9 @@ const BooksListBlockComponent: FC<Readonly<IProps>> = (props) => {
               publishedYear={book.publishedYear}
               description={book.description}
               href={`/${book.id}`}
-              isFavorite={!!favorites?.some((f) => f.id === book.id)}
+              isFavorite={favoritesList.some((f) => f.id === book.id)}
               onToggle={() =>
-                toggleFavorite.mutate({ bookId: book.id, isFavorite: !!favorites?.some((f) => f.id === book.id) })
+                toggleFavorite.mutate({ bookId: book.id, isFavorite: favoritesList.some((f) => f.id === book.id) })
               }
               loading={toggleFavorite.isPending}
             />
