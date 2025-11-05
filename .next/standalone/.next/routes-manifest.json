@@ -45,6 +45,14 @@
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/profile(?:/)?$"
     },
     {
+      "page": "/[locale]/signin",
+      "regex": "^/([^/]+?)/signin(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/signin(?:/)?$"
+    },
+    {
       "page": "/[locale]/[id]",
       "regex": "^/([^/]+?)/([^/]+?)(?:/)?$",
       "routeKeys": {
@@ -72,6 +80,12 @@
       "regex": "^/api/books(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/books(?:/)?$"
+    },
+    {
+      "page": "/api/favorites",
+      "regex": "^/api/favorites(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/favorites(?:/)?$"
     },
     {
       "page": "/api/slugBook",

@@ -456,6 +456,10 @@
     min-height: calc(100vh - 60px);
   }
 
+  .min-h-\[calc\(100vh-200px\)\] {
+    min-height: calc(100vh - 200px);
+  }
+
   .w-1\/2 {
     width: 50%;
   }

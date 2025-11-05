@@ -1607,6 +1607,7 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/react-client/index.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$auth$2f$authClient$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/entities/auth/authClient.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$user$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/src/app/entities/api/user/index.ts [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$user$2f$user$2e$query$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/entities/api/user/user.query.ts [app-client] (ecmascript)");
@@ -1620,12 +1621,14 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 // component
 const AuthBlockComponent = ()=>{
     _s();
     const [isAuthenticated, setIsAuthenticated] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useTranslations"])('Auth');
+    const queryClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQueryClient"])();
     const { data: user, isLoading: userLoading, error } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$user$2f$user$2e$query$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUserQuery"])();
     const checkAuth = async ()=>{
         try {
@@ -1679,7 +1682,7 @@ const AuthBlockComponent = ()=>{
             children: "Loading..."
         }, void 0, false, {
             fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-            lineNumber: 68,
+            lineNumber: 72,
             columnNumber: 12
         }, ("TURBOPACK compile-time value", void 0));
     }
@@ -1697,7 +1700,7 @@ const AuthBlockComponent = ()=>{
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-                    lineNumber: 74,
+                    lineNumber: 78,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$lib$2d$components$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1706,7 +1709,7 @@ const AuthBlockComponent = ()=>{
                     children: t('signOut')
                 }, void 0, false, {
                     fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-                    lineNumber: 76,
+                    lineNumber: 80,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0))
             ]
@@ -1719,7 +1722,7 @@ const AuthBlockComponent = ()=>{
                     children: t('signIn')
                 }, void 0, false, {
                     fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-                    lineNumber: 80,
+                    lineNumber: 84,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$lib$2d$components$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1727,24 +1730,25 @@ const AuthBlockComponent = ()=>{
                     children: t('signUp')
                 }, void 0, false, {
                     fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-                    lineNumber: 84,
+                    lineNumber: 88,
                     columnNumber: 11
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-            lineNumber: 79,
+            lineNumber: 83,
             columnNumber: 15
         }, ("TURBOPACK compile-time value", void 0))
     }, void 0, false, {
         fileName: "[project]/src/app/features/block/auth-block/auth-block.component.tsx",
-        lineNumber: 72,
+        lineNumber: 76,
         columnNumber: 10
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(AuthBlockComponent, "qClGwHpJOzSDiBmpD1ceUcFkqLQ=", false, function() {
+_s(AuthBlockComponent, "09JevGdvBD06glqSlGYlkUCVDuc=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["useTranslations"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$QueryClientProvider$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQueryClient"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$user$2f$user$2e$query$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUserQuery"]
     ];
 });
@@ -1822,14 +1826,14 @@ const booksQueryKeys = {
             searchQuery
         ]
 };
-const useBooksQuery = (searchQuery)=>{
+const useBooksQuery = (searchQuery, options)=>{
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(8);
-    if ($[0] !== "1604d208c782ec94dfda694b3b995db49268724cf2b7ceb0ad221858f75ac51e") {
-        for(let $i = 0; $i < 8; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "a38d507da48ec8abdf668f998b5d43be81e4a46d6dbbebf060ddc0c2705c614d") {
+        for(let $i = 0; $i < 9; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "1604d208c782ec94dfda694b3b995db49268724cf2b7ceb0ad221858f75ac51e";
+        $[0] = "a38d507da48ec8abdf668f998b5d43be81e4a46d6dbbebf060ddc0c2705c614d";
     }
     let t0;
     if ($[1] !== searchQuery) {
@@ -1849,19 +1853,22 @@ const useBooksQuery = (searchQuery)=>{
     } else {
         t1 = $[4];
     }
-    let t2;
-    if ($[5] !== t0 || $[6] !== t1) {
-        t2 = {
+    const t2 = options?.enabled !== false;
+    let t3;
+    if ($[5] !== t0 || $[6] !== t1 || $[7] !== t2) {
+        t3 = {
             queryKey: t0,
-            queryFn: t1
+            queryFn: t1,
+            enabled: t2
         };
         $[5] = t0;
         $[6] = t1;
         $[7] = t2;
+        $[8] = t3;
     } else {
-        t2 = $[7];
+        t3 = $[8];
     }
-    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQuery"])(t2);
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$tanstack$2f$react$2d$query$2f$build$2f$modern$2f$useQuery$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useQuery"])(t3);
 };
 _s(useBooksQuery, "4ZpngI1uv+Uo3WQHEZmTQ5FNM+k=", false, function() {
     return [
@@ -1887,7 +1894,14 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$r
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$rest$2d$api$2f$fetcher$2f$rest$2d$api$2e$fetcher$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/pkg/libraries/rest-api/fetcher/rest-api.fetcher.ts [app-client] (ecmascript)");
 ;
 async function fetchFavorites() {
-    return await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$rest$2d$api$2f$fetcher$2f$rest$2d$api$2e$fetcher$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["restApiFetcher"].get('api/favorites').json();
+    const response = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$rest$2d$api$2f$fetcher$2f$rest$2d$api$2e$fetcher$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["restApiFetcher"].get('api/favorites');
+    // If response is not ok (e.g., 401 Unauthorized), return empty array
+    if (!response.ok) {
+        return [];
+    }
+    const data = await response.json();
+    // Ensure we always return an array
+    return Array.isArray(data) ? data : [];
 }
 async function addFavorite(bookId) {
     return await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pkg$2f$libraries$2f$rest$2d$api$2f$fetcher$2f$rest$2d$api$2e$fetcher$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["restApiFetcher"].post('api/favorites', {
@@ -2048,6 +2062,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$books$2f$books$2e$query$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/entities/api/books/books.query.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$favorites$2f$favorites$2e$query$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/entities/api/favorites/favorites.query.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$user$2f$user$2e$query$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/entities/api/user/user.query.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$components$2f$custom$2d$card$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/src/app/shared/ui/components/custom-card/index.ts [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$components$2f$custom$2d$card$2f$curstom$2d$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CustomCardComponent$3e$__ = __turbopack_context__.i("[project]/src/app/shared/ui/components/custom-card/curstom-card.tsx [app-client] (ecmascript) <export default as CustomCardComponent>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/src/app/shared/ui/index.ts [app-client] (ecmascript) <locals>");
@@ -2061,42 +2076,181 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 // component
 const BooksListBlockComponent = (props)=>{
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
-    if ($[0] !== "6468802ccad648521ee5b2679c1a67546263bdb991b5bbf345b38442562347d4") {
-        for(let $i = 0; $i < 9; $i += 1){
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(17);
+    if ($[0] !== "81f88219d50acbf4b960b8d97b9494f5b97708254510a893ea40167feb185b4d") {
+        for(let $i = 0; $i < 17; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "6468802ccad648521ee5b2679c1a67546263bdb991b5bbf345b38442562347d4";
+        $[0] = "81f88219d50acbf4b960b8d97b9494f5b97708254510a893ea40167feb185b4d";
     }
     const { searchQuery: t0 } = props;
     const searchQuery = t0 === undefined ? "" : t0;
-    const { data: books, isLoading, error } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$books$2f$books$2e$query$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useBooksQuery"])(searchQuery);
+    const { data: user, isLoading: userLoading, error: userError } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$user$2f$user$2e$query$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUserQuery"])();
+    console.log("user", user);
+    const t1 = !!user;
+    let t2;
+    if ($[1] !== t1) {
+        t2 = {
+            enabled: t1
+        };
+        $[1] = t1;
+        $[2] = t2;
+    } else {
+        t2 = $[2];
+    }
+    const { data: books, isLoading, error } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$books$2f$books$2e$query$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useBooksQuery"])(searchQuery, t2);
     const { data: favorites } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$favorites$2f$favorites$2e$query$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFavoritesQuery"])();
     const toggleFavorite = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$favorites$2f$favorites$2e$query$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToggleFavoriteMutation"])();
-    if (isLoading) {
-        let t1;
-        if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
-            t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+    let t3;
+    if ($[3] !== favorites) {
+        t3 = Array.isArray(favorites) ? favorites : [];
+        $[3] = favorites;
+        $[4] = t3;
+    } else {
+        t3 = $[4];
+    }
+    const favoritesList = t3;
+    if (userLoading) {
+        let t4;
+        if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+            t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                 className: "text-xl font-semibold",
                 children: "Books from Database"
             }, void 0, false, {
                 fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                lineNumber: 41,
+                lineNumber: 67,
                 columnNumber: 12
             }, ("TURBOPACK compile-time value", void 0));
-            $[1] = t1;
+            $[5] = t4;
         } else {
-            t1 = $[1];
+            t4 = $[5];
         }
-        let t2;
-        if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
-            t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        let t5;
+        if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+            t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "space-y-4",
                 children: [
-                    t1,
+                    t4,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex justify-center py-8",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$lib$2d$components$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                            className: "w-64",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$lib$2d$components$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                                className: "pt-6",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-muted-foreground text-center",
+                                    children: "Loading..."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
+                                    lineNumber: 74,
+                                    columnNumber: 138
+                                }, ("TURBOPACK compile-time value", void 0))
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
+                                lineNumber: 74,
+                                columnNumber: 108
+                            }, ("TURBOPACK compile-time value", void 0))
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
+                            lineNumber: 74,
+                            columnNumber: 85
+                        }, ("TURBOPACK compile-time value", void 0))
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
+                        lineNumber: 74,
+                        columnNumber: 43
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
+                lineNumber: 74,
+                columnNumber: 12
+            }, ("TURBOPACK compile-time value", void 0));
+            $[6] = t5;
+        } else {
+            t5 = $[6];
+        }
+        return t5;
+    }
+    if (!user || userError) {
+        let t4;
+        if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+            t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: "text-xl font-semibold",
+                children: "Books from Database"
+            }, void 0, false, {
+                fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
+                lineNumber: 84,
+                columnNumber: 12
+            }, ("TURBOPACK compile-time value", void 0));
+            $[7] = t4;
+        } else {
+            t4 = $[7];
+        }
+        let t5;
+        if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+            t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "space-y-4",
+                children: [
+                    t4,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$lib$2d$components$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$lib$2d$components$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                            className: "pt-6",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "text-muted-foreground text-center",
+                                children: "Please sign in to view books"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
+                                lineNumber: 91,
+                                columnNumber: 79
+                            }, ("TURBOPACK compile-time value", void 0))
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
+                            lineNumber: 91,
+                            columnNumber: 49
+                        }, ("TURBOPACK compile-time value", void 0))
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
+                        lineNumber: 91,
+                        columnNumber: 43
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
+                lineNumber: 91,
+                columnNumber: 12
+            }, ("TURBOPACK compile-time value", void 0));
+            $[8] = t5;
+        } else {
+            t5 = $[8];
+        }
+        return t5;
+    }
+    if (isLoading) {
+        let t4;
+        if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+            t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: "text-xl font-semibold",
+                children: "Books from Database"
+            }, void 0, false, {
+                fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
+                lineNumber: 101,
+                columnNumber: 12
+            }, ("TURBOPACK compile-time value", void 0));
+            $[9] = t4;
+        } else {
+            t4 = $[9];
+        }
+        let t5;
+        if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+            t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "space-y-4",
+                children: [
+                    t4,
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid gap-4 md:grid-cols-2 lg:grid-cols-3",
                         children: Array.from({
@@ -2104,25 +2258,25 @@ const BooksListBlockComponent = (props)=>{
                         }).map(_temp)
                     }, void 0, false, {
                         fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                        lineNumber: 48,
+                        lineNumber: 108,
                         columnNumber: 43
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                lineNumber: 48,
+                lineNumber: 108,
                 columnNumber: 12
             }, ("TURBOPACK compile-time value", void 0));
-            $[2] = t2;
+            $[10] = t5;
         } else {
-            t2 = $[2];
+            t5 = $[10];
         }
-        return t2;
+        return t5;
     }
     if (error) {
-        let t1;
-        if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
-            t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        let t4;
+        if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+            t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex justify-center py-8",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$lib$2d$components$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
                     className: "border-destructive w-64",
@@ -2133,50 +2287,50 @@ const BooksListBlockComponent = (props)=>{
                             children: "Error loading books"
                         }, void 0, false, {
                             fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                            lineNumber: 60,
+                            lineNumber: 120,
                             columnNumber: 126
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                        lineNumber: 60,
+                        lineNumber: 120,
                         columnNumber: 96
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                    lineNumber: 60,
+                    lineNumber: 120,
                     columnNumber: 54
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                lineNumber: 60,
+                lineNumber: 120,
                 columnNumber: 12
             }, ("TURBOPACK compile-time value", void 0));
-            $[3] = t1;
+            $[11] = t4;
         } else {
-            t1 = $[3];
+            t4 = $[11];
         }
-        return t1;
+        return t4;
     }
-    let t1;
-    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
-        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+    let t4;
+    if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
             className: "text-xl font-semibold",
             children: "Books from Database"
         }, void 0, false, {
             fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-            lineNumber: 69,
+            lineNumber: 129,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
-        $[4] = t1;
+        $[12] = t4;
     } else {
-        t1 = $[4];
+        t4 = $[12];
     }
-    let t2;
-    if ($[5] !== books || $[6] !== favorites || $[7] !== toggleFavorite) {
-        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+    let t5;
+    if ($[13] !== books || $[14] !== favoritesList || $[15] !== toggleFavorite) {
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "space-y-4",
             children: [
-                t1,
+                t4,
                 books && books.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$lib$2d$components$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$lib$2d$components$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
                         className: "pt-6",
@@ -2185,17 +2339,17 @@ const BooksListBlockComponent = (props)=>{
                             children: "No books found"
                         }, void 0, false, {
                             fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                            lineNumber: 76,
+                            lineNumber: 136,
                             columnNumber: 108
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                        lineNumber: 76,
+                        lineNumber: 136,
                         columnNumber: 78
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                    lineNumber: 76,
+                    lineNumber: 136,
                     columnNumber: 72
                 }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "grid gap-4 md:grid-cols-2 lg:grid-cols-3",
@@ -2205,39 +2359,40 @@ const BooksListBlockComponent = (props)=>{
                             publishedYear: book.publishedYear,
                             description: book.description,
                             href: `/${book.id}`,
-                            isFavorite: !!favorites?.some((f)=>f.id === book.id),
+                            isFavorite: favoritesList.some((f)=>f.id === book.id),
                             onToggle: ()=>toggleFavorite.mutate({
                                     bookId: book.id,
-                                    isFavorite: !!favorites?.some((f_0)=>f_0.id === book.id)
+                                    isFavorite: favoritesList.some((f_0)=>f_0.id === book.id)
                                 }),
                             loading: toggleFavorite.isPending
                         }, book.id, false, {
                             fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                            lineNumber: 76,
+                            lineNumber: 136,
                             columnNumber: 281
                         }, ("TURBOPACK compile-time value", void 0)))
                 }, void 0, false, {
                     fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                    lineNumber: 76,
+                    lineNumber: 136,
                     columnNumber: 203
                 }, ("TURBOPACK compile-time value", void 0))
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-            lineNumber: 76,
+            lineNumber: 136,
             columnNumber: 10
         }, ("TURBOPACK compile-time value", void 0));
-        $[5] = books;
-        $[6] = favorites;
-        $[7] = toggleFavorite;
-        $[8] = t2;
+        $[13] = books;
+        $[14] = favoritesList;
+        $[15] = toggleFavorite;
+        $[16] = t5;
     } else {
-        t2 = $[8];
+        t5 = $[16];
     }
-    return t2;
+    return t5;
 };
-_s(BooksListBlockComponent, "Lr6KLv4i5N/6051CmIFfjXJZ4Ug=", false, function() {
+_s(BooksListBlockComponent, "UXpllLXOEk2xCXr8w5xO4X62xMs=", false, function() {
     return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$user$2f$user$2e$query$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUserQuery"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$books$2f$books$2e$query$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useBooksQuery"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$favorites$2f$favorites$2e$query$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useFavoritesQuery"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$entities$2f$api$2f$favorites$2f$favorites$2e$query$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToggleFavoriteMutation"]
@@ -2254,20 +2409,20 @@ function _temp(_, i) {
                         className: "h-5 w-3/4"
                     }, void 0, false, {
                         fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                        lineNumber: 91,
+                        lineNumber: 151,
                         columnNumber: 36
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$lib$2d$components$2f$skeleton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Skeleton"], {
                         className: "mt-2 h-4 w-1/2"
                     }, void 0, false, {
                         fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                        lineNumber: 91,
+                        lineNumber: 151,
                         columnNumber: 70
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                lineNumber: 91,
+                lineNumber: 151,
                 columnNumber: 24
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$lib$2d$components$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -2276,33 +2431,33 @@ function _temp(_, i) {
                         className: "h-4 w-1/3"
                     }, void 0, false, {
                         fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                        lineNumber: 91,
+                        lineNumber: 151,
                         columnNumber: 135
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$lib$2d$components$2f$skeleton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Skeleton"], {
                         className: "mt-3 h-4 w-full"
                     }, void 0, false, {
                         fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                        lineNumber: 91,
+                        lineNumber: 151,
                         columnNumber: 169
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$shared$2f$ui$2f$lib$2d$components$2f$skeleton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Skeleton"], {
                         className: "mt-2 h-4 w-5/6"
                     }, void 0, false, {
                         fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                        lineNumber: 91,
+                        lineNumber: 151,
                         columnNumber: 209
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-                lineNumber: 91,
+                lineNumber: 151,
                 columnNumber: 122
             }, this)
         ]
     }, i, true, {
         fileName: "[project]/src/app/features/block/books-list-block/books-list-block.component.tsx",
-        lineNumber: 91,
+        lineNumber: 151,
         columnNumber: 10
     }, this);
 }

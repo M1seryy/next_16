@@ -45,7 +45,7 @@ const SlugModule = (props)=>{
                 id: id
             }, void 0, false, {
                 fileName: "[project]/src/app/modules/slug/slug.module.tsx",
-                lineNumber: 23,
+                lineNumber: 24,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]

@@ -16,11 +16,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$bl
 // component
 const SlugModule = (props)=>{
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(4);
-    if ($[0] !== "020ea8c056c1f6a92e6c60cef0f7728fd09a7704096a48489958779ac2e82531") {
+    if ($[0] !== "c90bd735a0cbdef0975912d71c3b2274d223eb800d24381744d6fb6d60d29ae3") {
         for(let $i = 0; $i < 4; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "020ea8c056c1f6a92e6c60cef0f7728fd09a7704096a48489958779ac2e82531";
+        $[0] = "c90bd735a0cbdef0975912d71c3b2274d223eb800d24381744d6fb6d60d29ae3";
     }
     const { id } = props;
     let t0;
