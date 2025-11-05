@@ -29,6 +29,13 @@
       "when": 1761317702243,
       "tag": "0003_faulty_sprite",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1762347152111,
+      "tag": "0004_new_thor_girl",
+      "breakpoints": true
     }
   ]
 }

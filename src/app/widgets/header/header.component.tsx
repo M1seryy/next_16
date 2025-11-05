@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl'
 import { type FC } from 'react'
 
 import { AuthBlockComponent } from '@/app/features/block'
-import { LanguageSwitcherComponent } from '@/app/shared/ui/language-switcher'
+import { LanguageSwitcherComponent } from '@/app/shared/ui/components/language-switcher'
 import { Link } from '@/pkg/libraries/locale/navigation'
 
 // interface
