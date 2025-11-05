@@ -42,7 +42,6 @@ export default async function middleware(request: NextRequest) {
     // Log error for debugging
     console.error('[Middleware] Auth check error:', error)
 
-
     return intlMiddleware(request)
   }
 }
