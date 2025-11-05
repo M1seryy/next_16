@@ -1,7 +1,7 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
 import { type FC, useState } from 'react'
+import { useTranslations } from 'next-intl'
 
 import { BooksListBlockComponent, SearchFormBlockComponent } from '@/app/features/block'
 import { BannerComponent } from '@/app/shared/ui'
@@ -27,6 +27,7 @@ const HomeModule: FC<Readonly<IProps>> = (props) => {
     <div className='space-y-6'>
       <div>
         <BannerComponent />
+
         <h1 className='text-2xl font-bold'>{t('home.title')}</h1>
         <p>{t('home.subtitle')}</p>
       </div>

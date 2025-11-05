@@ -26,7 +26,9 @@ const ContainerComponent: FC<Readonly<IProps>> = (props) => {
           {children}
         </main>
       ) : (
-        <div className={cn(`mx-auto flex w-full max-w-[1280px] flex-col gap-4`, className)}>{children}</div>
+        <div className={cn(`mx-auto flex w-full max-w-[1280px] flex-col gap-4`, className)}>
+          {children}
+        </div>
       )}
     </>
   )

@@ -35,8 +35,8 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/react-client/index.js [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/next-intl/dist/esm/development/react-client/index.js [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/src/app/features/block/index.ts [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$books$2d$list$2d$block$2f$books$2d$list$2d$block$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BooksListBlockComponent$3e$__ = __turbopack_context__.i("[project]/src/app/features/block/books-list-block/books-list-block.component.tsx [app-client] (ecmascript) <export default as BooksListBlockComponent>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$features$2f$block$2f$search$2d$form$2d$block$2f$search$2d$form$2d$block$2e$component$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SearchFormBlockComponent$3e$__ = __turbopack_context__.i("[project]/src/app/features/block/search-form-block/search-form-block.component.tsx [app-client] (ecmascript) <export default as SearchFormBlockComponent>");
@@ -54,11 +54,11 @@ var _s = __turbopack_context__.k.signature();
 const HomeModule = (props)=>{
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(21);
-    if ($[0] !== "3735fcaaea29fd900b2fc0d52b2d4ddd24c545970bbe7c7ff966584e240c952b") {
+    if ($[0] !== "4f69662a76829aae49f64c0f5bd7938e9d9da484bf4e5da842e3fe251716a28f") {
         for(let $i = 0; $i < 21; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "3735fcaaea29fd900b2fc0d52b2d4ddd24c545970bbe7c7ff966584e240c952b";
+        $[0] = "4f69662a76829aae49f64c0f5bd7938e9d9da484bf4e5da842e3fe251716a28f";
     }
     const { searchQuery: t0 } = props;
     const initialSearchQuery = t0 === undefined ? "" : t0;

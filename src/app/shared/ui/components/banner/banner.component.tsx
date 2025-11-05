@@ -1,10 +1,10 @@
-import Image from 'next/image'
 import { type FC } from 'react'
+import Image from 'next/image'
 
-// interface for banner component props
+// interface
 interface IProps {}
 
-// banner component
+// component
 const BannerComponent: FC<Readonly<IProps>> = () => {
   return (
     <div className='relative mt-3.5 mb-3.5 h-[400px] max-w-[1280px] overflow-hidden rounded-2xl'>

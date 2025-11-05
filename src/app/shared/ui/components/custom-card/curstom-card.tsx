@@ -1,9 +1,9 @@
 import { type FC } from 'react'
 
+import { FavoriteToggle } from '@/app/shared/ui/components/favourite-toggle/favourite-toggle'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app/shared/ui'
 import { cn } from '@/app/shared/lib/utils'
 import { Link } from '@/pkg/libraries/locale/navigation'
-import { FavoriteToggle } from '@/app/shared/ui/components/favourite-toggle/favourite-toggle'
 
 // interface
 interface IProps {
@@ -29,6 +29,7 @@ const CustomCardComponent: FC<Readonly<IProps>> = (props) => {
         <Link href={href ?? '/'} prefetch className={cn('group block')}>
           <div>
             <CardTitle className='text-lg'>{title}</CardTitle>
+
             <CardDescription>by {author}</CardDescription>
           </div>
         </Link>
@@ -40,8 +41,10 @@ const CustomCardComponent: FC<Readonly<IProps>> = (props) => {
           onToggle={onToggle}
         />
       </CardHeader>
+
       <CardContent>
         <p className='text-muted-foreground text-sm'>Published: {publishedYear}</p>
+
         {description && <p className='text-muted-foreground mt-2 text-sm'>{description}</p>}
       </CardContent>
     </Card>

@@ -1,12 +1,10 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
 import { type FC } from 'react'
+import { useTranslations } from 'next-intl'
 import { useForm } from 'react-hook-form'
 
-import { Button } from '@/app/shared/ui'
-import { Input } from '@/app/shared/ui'
-import { Form, FormControl, FormField, FormItem, FormMessage } from '@/app/shared/ui'
+import { Button, Form, FormControl, FormField, FormItem, FormMessage, Input } from '@/app/shared/ui'
 
 // interface
 interface IProps {
@@ -50,6 +48,7 @@ const SearchFormBlockComponent: FC<Readonly<IProps>> = (props) => {
                 <FormControl>
                   <Input {...field} placeholder={t('Search.placeholder')} className='w-full' />
                 </FormControl>
+
                 <FormMessage />
               </FormItem>
             )}

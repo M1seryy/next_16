@@ -1,7 +1,8 @@
 'use client'
 
-import { useUserQuery } from '@/app/entities/api/user'
 import { type FC } from 'react'
+
+import { useUserQuery } from '@/app/entities/api/user'
 
 // interface
 interface IProps {}
@@ -26,21 +27,26 @@ const ProfileBlockComponent: FC<Readonly<IProps>> = (props) => {
     <div className='mt-8 flex flex-col gap-6'>
       <div className='bg-card rounded-lg border p-6 shadow'>
         <h2 className='mb-2 text-lg font-semibold'>User Information</h2>
+
         <div className='flex flex-col gap-1'>
           <span className='text-muted-foreground text-sm'>Username: {user.name}</span>
           <span className='text-muted-foreground text-sm'>Email: {user.email}</span>
         </div>
       </div>
+
       <div className='bg-card rounded-lg border p-6 shadow'>
         <h2 className='mb-2 text-lg font-semibold'>Account Settings</h2>
+
         <ul className='text-muted-foreground list-disc space-y-1 pl-6 text-sm'>
           <li>Change password</li>
           <li>Edit profile</li>
           <li>Manage notifications</li>
         </ul>
       </div>
+
       <div className='bg-card rounded-lg border p-6 shadow'>
         <h2 className='mb-2 text-lg font-semibold'>My Activity</h2>
+
         <ul className='text-muted-foreground space-y-1 text-sm'>
           <li>
             Books added: <span className='font-medium'>12</span>

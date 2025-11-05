@@ -57,13 +57,17 @@ const SlugBlockComponent: FC<Readonly<IProps>> = (props) => {
     <Card>
       <CardHeader>
         <CardTitle className='text-2xl'>{book.title}</CardTitle>
+
         <CardDescription>by {book.author}</CardDescription>
       </CardHeader>
+
       <CardContent className='space-y-4'>
         <p className='text-muted-foreground text-sm'>Published: {book.publishedYear}</p>
+
         {book.description && (
           <div>
             <h3 className='mb-2 font-semibold'>Description</h3>
+
             <p className='text-muted-foreground text-sm'>{book.description}</p>
           </div>
         )}

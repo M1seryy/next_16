@@ -19,6 +19,7 @@ const ProfilePage: FC<Readonly<IProps>> = async (props) => {
   return (
     <div>
       <h1 className='mb-4 text-2xl font-bold'>Profile Page</h1>
+
       <p>Welcome to your profile!</p>
 
       <HydrationBoundary state={dehydrate(queryClient)}>

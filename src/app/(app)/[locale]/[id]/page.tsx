@@ -1,10 +1,10 @@
 import { type FC } from 'react'
-import { HydrationBoundary, dehydrate } from '@tanstack/react-query'
+import { dehydrate, HydrationBoundary } from '@tanstack/react-query'
 
-import { getQueryClient } from '@/pkg/libraries/rest-api/service'
 import { SlugModule } from '@/app/modules/slug'
 import { slugBookQueryApi } from '@/app/entities/api/books/slug.api'
 import { booksQueryKeys } from '@/app/entities/api/books/slug.query'
+import { getQueryClient } from '@/pkg/libraries/rest-api/service'
 
 // interface
 interface IProps {

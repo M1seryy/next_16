@@ -1,7 +1,7 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
 import { type FC } from 'react'
+import { useTranslations } from 'next-intl'
 
 import { AuthBlockComponent } from '@/app/features/block'
 import { LanguageSwitcherComponent } from '@/app/shared/ui/components/language-switcher'
@@ -21,14 +21,17 @@ const HeaderComponent: FC<Readonly<IProps>> = () => {
         <Link href={'/'}>
           <h1 className='text-4xl'>Book Store</h1>
         </Link>
+
         <nav>
           <ul className='flex items-center gap-5'>
             <li className='text-xl'>
               <Link href={'/'}>{t('navigation.home')}</Link>
             </li>
+
             <li>
               <LanguageSwitcherComponent />
             </li>
+
             <li>
               <AuthBlockComponent />
             </li>

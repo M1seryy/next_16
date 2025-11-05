@@ -20,6 +20,7 @@ const SlugModule: FC<Readonly<IProps>> = (props) => {
         <h1 className='text-2xl font-bold'>Book Detail</h1>
         <p>Here you can see details for the selected book.</p>
       </div>
+
       <SlugBlockComponent id={id} />
     </div>
   )

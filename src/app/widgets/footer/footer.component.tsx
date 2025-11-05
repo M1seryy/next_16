@@ -1,10 +1,8 @@
-import { getTranslations } from 'next-intl/server'
 import { type FC } from 'react'
+import { getTranslations } from 'next-intl/server'
 
 // interface
-interface IProps {
-  // no props needed
-}
+interface IProps {}
 
 // component
 const FooterComponent: FC<Readonly<IProps>> = async () => {

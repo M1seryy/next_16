@@ -1,8 +1,8 @@
 'use client'
 
-import { useLocale, useTranslations } from 'next-intl'
-import { useRouter, usePathname } from 'next/navigation'
 import { type FC } from 'react'
+import { useLocale, useTranslations } from 'next-intl'
+import { usePathname, useRouter } from 'next/navigation'
 
 import { Button } from '@/app/shared/ui'
 
@@ -27,6 +27,7 @@ const LanguageSwitcherComponent: FC<Readonly<IProps>> = () => {
       <Button variant={locale === 'en' ? 'default' : 'outline'} size='sm' onClick={() => switchLanguage('en')}>
         {t('english')}
       </Button>
+
       <Button variant={locale === 'uk' ? 'default' : 'outline'} size='sm' onClick={() => switchLanguage('uk')}>
         {t('ukrainian')}
       </Button>

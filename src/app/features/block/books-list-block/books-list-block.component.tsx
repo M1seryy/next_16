@@ -3,10 +3,10 @@
 import { type FC } from 'react'
 
 import { useBooksQuery } from '@/app/entities/api/books/books.query'
+import { useFavoritesQuery, useToggleFavoriteMutation } from '@/app/entities/api/favorites/favorites.query'
+import { CustomCardComponent } from '@/app/shared/ui/components/custom-card'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, Skeleton } from '@/app/shared/ui'
 import { Link } from '@/pkg/libraries/locale/navigation'
-import { CustomCardComponent } from '@/app/shared/ui/components/custom-card'
-import { useFavoritesQuery, useToggleFavoriteMutation } from '@/app/entities/api/favorites/favorites.query'
 
 // interface
 interface IProps {
@@ -30,11 +30,15 @@ const BooksListBlockComponent: FC<Readonly<IProps>> = (props) => {
             <Card key={i}>
               <CardHeader>
                 <Skeleton className='h-5 w-3/4' />
+
                 <Skeleton className='mt-2 h-4 w-1/2' />
               </CardHeader>
+
               <CardContent>
                 <Skeleton className='h-4 w-1/3' />
+
                 <Skeleton className='mt-3 h-4 w-full' />
+
                 <Skeleton className='mt-2 h-4 w-5/6' />
               </CardContent>
             </Card>

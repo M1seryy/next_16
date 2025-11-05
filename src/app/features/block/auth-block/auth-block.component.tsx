@@ -1,7 +1,7 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
 import { type FC, useEffect, useState } from 'react'
+import { useTranslations } from 'next-intl'
 
 import { authClient } from '@/app/entities/auth/authClient'
 import { useUserQuery } from '@/app/entities/api/user'
@@ -81,6 +81,7 @@ const AuthBlockComponent: FC<Readonly<IProps>> = () => {
       {isAuthenticated && user ? (
         <>
           <span className='text-lg font-medium'>Hello, {user.name || user.email}!</span>
+
           <Button variant='outline' onClick={handleSignOut}>
             {t('signOut')}
           </Button>
@@ -90,6 +91,7 @@ const AuthBlockComponent: FC<Readonly<IProps>> = () => {
           <Button variant='outline' onClick={handleGoogleSignIn}>
             {t('signIn')}
           </Button>
+
           <Button onClick={handleGoogleSignUp}>{t('signUp')}</Button>
         </div>
       )}

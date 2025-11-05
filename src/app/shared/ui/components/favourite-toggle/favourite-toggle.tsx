@@ -2,9 +2,11 @@
 
 import { type FC, type MouseEvent } from 'react'
 import { Heart } from 'lucide-react'
-import { cn } from '@/app/shared/lib/utils'
-import { Button } from '@/app/shared/ui'
 
+import { Button } from '@/app/shared/ui'
+import { cn } from '@/app/shared/lib/utils'
+
+// interface
 interface IProps {
   isActive?: boolean
   count?: number
@@ -38,6 +40,7 @@ export const FavoriteToggle: FC<Readonly<IProps>> = (props) => {
       >
         <Heart className={cn('h-5 w-5', isActive && 'fill-red-500')} />
       </Button>
+
       {typeof count === 'number' && <span className='text-muted-foreground text-sm'>{count}</span>}
     </div>
   )
