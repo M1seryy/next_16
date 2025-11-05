@@ -16,7 +16,7 @@ const HeaderComponent: FC<Readonly<IProps>> = () => {
 
   // return
   return (
-    <div className='m-auto mt-3.5 flex w-[1280px] flex-col'>
+    <div className='border-border m-auto mt-3.5 flex w-[1280px] flex-col border-b p-4'>
       <div className='mx-auto flex w-full items-center justify-between px-4 md:px-6'>
         <Link href={'/'}>
           <h1 className='text-4xl'>Book Store</h1>

@@ -35,6 +35,23 @@
         "nxtPlocale": "nxtPlocale"
       },
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/[locale]/profile",
+      "regex": "^/([^/]+?)/profile(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/profile(?:/)?$"
+    },
+    {
+      "page": "/[locale]/[id]",
+      "regex": "^/([^/]+?)/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale",
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/(?<nxtPid>[^/]+?)(?:/)?$"
     }
   ],
   "staticRoutes": [
@@ -55,6 +72,18 @@
       "regex": "^/api/books(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/books(?:/)?$"
+    },
+    {
+      "page": "/api/slugBook",
+      "regex": "^/api/slugBook(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/slugBook(?:/)?$"
+    },
+    {
+      "page": "/api/user",
+      "regex": "^/api/user(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/user(?:/)?$"
     }
   ],
   "dataRoutes": [],

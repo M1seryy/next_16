@@ -1,3 +1,0 @@
-module.exports=[17040,a=>{"use strict";var b=a.i(87924),c=a.i(72131);a.i(20016);var d=a.i(71225),d=d,e=a.i(75192),e=e;a.i(23786);var f=a.i(41768),f=f,g=a.i(9610);a.s(["default",0,a=>{let{searchQuery:h=""}=a,[i,j]=(0,c.useState)(h),k=(0,g.useTranslations)();return(0,b.jsxs)("div",{className:"space-y-6",children:[(0,b.jsxs)("div",{children:[(0,b.jsx)(f.default,{}),(0,b.jsx)("h1",{className:"text-2xl font-bold",children:k("home.title")}),(0,b.jsx)("p",{children:k("home.subtitle")})]}),(0,b.jsx)("div",{className:"flex justify-center",children:(0,b.jsx)(e.default,{onSearch:a=>{j(a)},initialValue:i})}),(0,b.jsx)(d.default,{searchQuery:i})]})}],17040)}];
-
-//# sourceMappingURL=src_app_modules_home_home_module_tsx_4ea1e360._.js.map

@@ -1,7 +1,11 @@
 {
+  "/(app)/[locale]/[id]/page": "/[locale]/[id]",
   "/(app)/[locale]/page": "/[locale]",
+  "/(app)/[locale]/profile/page": "/[locale]/profile",
+  "/(app)/api/auth/[...all]/route": "/api/auth/[...all]",
+  "/(app)/api/books/route": "/api/books",
+  "/(app)/api/slugBook/route": "/api/slugBook",
+  "/(app)/api/user/route": "/api/user",
   "/_global-error/page": "/_global-error",
-  "/_not-found/page": "/_not-found",
-  "/api/auth/[...all]/route": "/api/auth/[...all]",
-  "/api/books/route": "/api/books"
+  "/_not-found/page": "/_not-found"
 }
