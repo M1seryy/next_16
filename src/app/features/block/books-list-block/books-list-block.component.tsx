@@ -33,7 +33,7 @@ const BooksListBlockComponent: FC<Readonly<IProps>> = (props) => {
     <div className='space-y-4'>
       <h2 className='text-xl font-semibold'>Books from Database</h2>
 
-      {books && books.length === 0 ? (
+      {user && books && books.length === 0 ? (
         <CardErrorComponent message='No books found' />
       ) : (
         <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
