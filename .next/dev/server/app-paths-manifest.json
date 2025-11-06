@@ -1,7 +1,0 @@
-{
-  "/(app)/[locale]/page": "app/(app)/[locale]/page.js",
-  "/(app)/[locale]/signin/page": "app/(app)/[locale]/signin/page.js",
-  "/(app)/api/auth/[...all]/route": "app/(app)/api/auth/[...all]/route.js",
-  "/(app)/api/books/route": "app/(app)/api/books/route.js",
-  "/(app)/api/favorites/route": "app/(app)/api/favorites/route.js"
-}
