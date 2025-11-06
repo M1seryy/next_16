@@ -1,7 +1,7 @@
 'use client'
 
-import { type FC, useEffect } from 'react'
-import { useSearchParams, useRouter } from 'next/navigation'
+import { type FC } from 'react'
+import { useSearchParams } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 
 import { authClient } from '@/app/entities/auth/authClient'
@@ -15,22 +15,7 @@ interface IProps {}
 const SignInModule: FC<Readonly<IProps>> = () => {
   const t = useTranslations('Auth')
   const searchParams = useSearchParams()
-  const router = useRouter()
-
   const redirect = searchParams.get('redirect') || '/'
-
-  useEffect(() => {
-    const checkAuth = async () => {
-      try {
-        const session = await authClient.getSession()
-        if (session && 'data' in session && session.data) {
-          router.push(redirect)
-        }
-      } catch (_error) {}
-    }
-
-    checkAuth()
-  }, [redirect, router])
 
   const handleGoogleSignIn = async () => {
     try {

@@ -4,8 +4,6 @@ import { type FC, useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { useQueryClient } from '@tanstack/react-query'
 
-import { useRouter } from 'next/navigation'
-
 import { authClient } from '@/app/entities/auth/authClient'
 import { useUserQuery, userQueryKeys } from '@/app/entities/api/user'
 import { booksQueryKeys } from '@/app/entities/api/books/books.query'
@@ -21,7 +19,6 @@ const AuthBlockComponent: FC<Readonly<IProps>> = () => {
   const [loading, setLoading] = useState(true)
   const t = useTranslations('Auth')
   const queryClient = useQueryClient()
-  const router = useRouter()
 
   const { data: user, isLoading: userLoading, error } = useUserQuery()
 
@@ -84,8 +81,7 @@ const AuthBlockComponent: FC<Readonly<IProps>> = () => {
       await queryClient.invalidateQueries({ queryKey: booksQueryKeys.all })
       await queryClient.invalidateQueries({ queryKey: favoritesKeys.all })
 
-      // Redirect to signin
-      router.push('/signin')
+      window.location.href = '/signin'
     } catch (_error) {}
   }
 
