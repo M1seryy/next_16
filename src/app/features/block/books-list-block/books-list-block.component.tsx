@@ -6,7 +6,7 @@ import { useBooksQuery } from '@/app/entities/api/books/books.query'
 import { useFavoritesQuery, useToggleFavoriteMutation } from '@/app/entities/api/favorites/favorites.query'
 import { useUserQuery } from '@/app/entities/api/user/user.query'
 import { CustomCardComponent } from '@/app/shared/ui/components/custom-card'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, Skeleton } from '@/app/shared/ui'
+import { Card, CardContent, CardLoaderComponent, CardSkeletonComponent } from '@/app/shared/ui'
 
 // interface
 interface IProps {
@@ -19,7 +19,7 @@ const BooksListBlockComponent: FC<Readonly<IProps>> = (props) => {
 
   const { data: user, isLoading: userLoading, error: userError } = useUserQuery()
   const { data: books, isLoading, error } = useBooksQuery(searchQuery, { enabled: !!user })
-  const { data: favorites } = useFavoritesQuery()
+  const { data: favorites } = useFavoritesQuery({ enabled: !!user, userId: user?.id })
   const toggleFavorite = useToggleFavoriteMutation()
 
   const favoritesList = Array.isArray(favorites) ? favorites : []
@@ -41,13 +41,7 @@ const BooksListBlockComponent: FC<Readonly<IProps>> = (props) => {
     return (
       <div className='space-y-4'>
         <h2 className='text-xl font-semibold'>Books from Database</h2>
-        <div className='flex justify-center py-8'>
-          <Card className='w-64'>
-            <CardContent className='pt-6'>
-              <div className='text-muted-foreground text-center'>Loading...</div>
-            </CardContent>
-          </Card>
-        </div>
+        <CardLoaderComponent message='Loading...' />
       </div>
     )
   }
@@ -59,21 +53,7 @@ const BooksListBlockComponent: FC<Readonly<IProps>> = (props) => {
         <h2 className='text-xl font-semibold'>Books from Database</h2>
         <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
           {Array.from({ length: 6 }).map((_, i) => (
-            <Card key={i}>
-              <CardHeader>
-                <Skeleton className='h-5 w-3/4' />
-
-                <Skeleton className='mt-2 h-4 w-1/2' />
-              </CardHeader>
-
-              <CardContent>
-                <Skeleton className='h-4 w-1/3' />
-
-                <Skeleton className='mt-3 h-4 w-full' />
-
-                <Skeleton className='mt-2 h-4 w-5/6' />
-              </CardContent>
-            </Card>
+            <CardSkeletonComponent key={i} />
           ))}
         </div>
       </div>
@@ -113,9 +93,12 @@ const BooksListBlockComponent: FC<Readonly<IProps>> = (props) => {
               publishedYear={book.publishedYear}
               description={book.description}
               href={`/${book.id}`}
-              isFavorite={favoritesList.some((f) => f.id === book.id)}
+              isFavorite={favoritesList.some((f) => Number(f.id) === Number(book.id))}
               onToggle={() =>
-                toggleFavorite.mutate({ bookId: book.id, isFavorite: favoritesList.some((f) => f.id === book.id) })
+                toggleFavorite.mutate({
+                  bookId: book.id,
+                  isFavorite: favoritesList.some((f) => Number(f.id) === Number(book.id)),
+                })
               }
               loading={toggleFavorite.isPending}
             />

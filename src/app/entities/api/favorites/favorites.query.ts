@@ -4,12 +4,15 @@ import { addFavorite, fetchFavorites, removeFavorite, type FavoriteBook } from '
 
 export const favoritesKeys = {
     all: ['favorites'] as const,
+    byUser: (userId?: string) => ['favorites', userId ?? 'anon'] as const,
 }
 
-export function useFavoritesQuery() {
+export function useFavoritesQuery(options?: { enabled?: boolean; userId?: string }) {
     return useQuery<FavoriteBook[]>({
-        queryKey: favoritesKeys.all,
+        queryKey: favoritesKeys.byUser(options?.userId),
         queryFn: fetchFavorites,
+        enabled: options?.enabled,
+        refetchOnMount: 'always',
     })
 }
 

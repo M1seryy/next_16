@@ -5,8 +5,8 @@ import { useSearchParams, useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl'
 
 import { authClient } from '@/app/entities/auth/authClient'
-import { Button } from '@/app/shared/ui'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app/shared/ui'
+import { SignInActionsComponent } from '@/app/features/block/sign-in-block'
+import { Card, CardDescription, CardHeader, CardTitle } from '@/app/shared/ui'
 
 // interface
 interface IProps {}
@@ -60,15 +60,12 @@ const SignInModule: FC<Readonly<IProps>> = () => {
           <CardDescription>{t('subtitle')}</CardDescription>
         </CardHeader>
 
-        <CardContent className='space-y-4'>
-          <Button onClick={handleGoogleSignIn} className='w-full' variant='outline'>
-            {t('signIn')} with Google
-          </Button>
-
-          <Button onClick={handleGoogleSignUp} className='w-full'>
-            {t('signUp')} with Google
-          </Button>
-        </CardContent>
+        <SignInActionsComponent
+          onSignIn={handleGoogleSignIn}
+          onSignUp={handleGoogleSignUp}
+          signInLabel={`${t('signIn')} with Google`}
+          signUpLabel={`${t('signUp')} with Google`}
+        />
       </Card>
     </div>
   )
