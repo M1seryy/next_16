@@ -79,11 +79,6 @@ const AuthBlockComponent: FC<Readonly<IProps>> = () => {
       // Clear all cache
       queryClient.clear()
 
-      queryClient.setQueryData(userQueryKeys.current(), null)
-
-      queryClient.setQueryData(booksQueryKeys.all, undefined)
-      queryClient.setQueryData(favoritesKeys.all, undefined)
-
       // Invalidate all queries
       await queryClient.invalidateQueries({ queryKey: ['user'] })
       await queryClient.invalidateQueries({ queryKey: booksQueryKeys.all })

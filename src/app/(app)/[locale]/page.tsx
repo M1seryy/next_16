@@ -5,8 +5,6 @@ import { dehydrate, HydrationBoundary } from '@tanstack/react-query'
 import { HomeModule } from '@/app/modules/home'
 import { booksQueryApi } from '@/app/entities/api/books/books.api'
 import { fetchFavorites } from '@/app/entities/api/favorites/favorites.api'
-import { favoritesKeys } from '@/app/entities/api/favorites/favorites.query'
-import { auth } from '@/pkg/integrations/better-auth/auth.config'
 import { getQueryClient } from '@/pkg/libraries/rest-api/service'
 
 // interface
