@@ -3,6 +3,7 @@
 import { type FC } from 'react'
 
 import { useUserQuery } from '@/app/entities/api/user'
+import { CardErrorComponent, CardLoaderComponent } from '@/app/shared/ui'
 
 // interface
 interface IProps {}
@@ -12,11 +13,11 @@ const ProfileBlockComponent: FC<Readonly<IProps>> = (props) => {
   const { data: user, isLoading, error } = useUserQuery()
 
   if (isLoading) {
-    return <div>Loading...</div>
+    return <CardLoaderComponent message='Loading...' />
   }
 
   if (error) {
-    return <div>Error: {error.message}</div>
+    return <CardErrorComponent message={`Error: ${error.message}`} />
   }
 
   if (!user) {

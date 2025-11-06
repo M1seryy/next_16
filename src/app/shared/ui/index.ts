@@ -19,3 +19,4 @@ export { default as ContainerComponent } from './components/container/container.
 export { default as CustomCardComponent } from './components/custom-card/curstom-card'
 export { default as CardLoaderComponent } from './components/card-loader/card-loader.component'
 export { default as CardSkeletonComponent } from './components/card-skeleton/card-skeleton.component'
+export { default as CardErrorComponent } from './components/card-error/card-error.component'

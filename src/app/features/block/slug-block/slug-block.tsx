@@ -3,7 +3,15 @@
 import { type FC } from 'react'
 
 import { useSlugQuery } from '@/app/entities/api/books/slug.query'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/app/shared/ui'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardErrorComponent,
+  CardHeader,
+  CardLoaderComponent,
+  CardTitle,
+} from '@/app/shared/ui'
 
 // interface
 interface IProps {
@@ -17,27 +25,11 @@ const SlugBlockComponent: FC<Readonly<IProps>> = (props) => {
   const { data: book, isLoading, error } = useSlugQuery(id)
 
   if (isLoading) {
-    return (
-      <div className='flex justify-center py-8'>
-        <Card className='w-64'>
-          <CardContent className='pt-6'>
-            <div className='text-muted-foreground text-center'>Loading book...</div>
-          </CardContent>
-        </Card>
-      </div>
-    )
+    return <CardLoaderComponent message='Loading book...' />
   }
 
   if (error) {
-    return (
-      <div className='flex justify-center py-8'>
-        <Card className='border-destructive w-64'>
-          <CardContent className='pt-6'>
-            <div className='text-destructive text-center'>Error loading book</div>
-          </CardContent>
-        </Card>
-      </div>
-    )
+    return <CardErrorComponent message='Error loading book' />
   }
 
   if (!book) {
