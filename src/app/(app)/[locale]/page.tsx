@@ -7,12 +7,18 @@ import { fetchFavorites } from '@/app/entities/api/favorites/favorites.api'
 import { getQueryClient } from '@/pkg/libraries/rest-api/service'
 
 // interface
-interface IProps {}
+interface IProps {
+  searchParams: Promise<{ search?: string }>
+}
 
 export const revalidate = 30
 
 // component
 const HomePage: FC<Readonly<IProps>> = async (props) => {
+  const { searchParams } = props
+  const params = await searchParams
+  const searchQuery = params.search || ''
+
   const queryClient = getQueryClient()
 
   await queryClient.prefetchQuery({
@@ -28,7 +34,7 @@ const HomePage: FC<Readonly<IProps>> = async (props) => {
   // return
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
-      <HomeModule />
+      <HomeModule searchQuery={searchQuery} />
     </HydrationBoundary>
   )
 }

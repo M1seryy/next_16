@@ -3,12 +3,13 @@
 import { type FC } from 'react'
 import { useTranslations } from 'next-intl'
 import { useForm } from 'react-hook-form'
+import { useSearchParams } from 'next/navigation'
 
+import { useRouter } from '@/pkg/libraries/locale/navigation'
 import { Button, Form, FormControl, FormField, FormItem, FormMessage, Input } from '@/app/shared/ui'
 
 // interface
 interface IProps {
-  onSearch: (query: string) => void
   initialValue?: string
 }
 
@@ -18,8 +19,10 @@ interface SearchFormData {
 
 // component
 const SearchFormBlockComponent: FC<Readonly<IProps>> = (props) => {
-  const { onSearch, initialValue = '' } = props
+  const { initialValue = '' } = props
 
+  const router = useRouter()
+  const searchParams = useSearchParams()
   const t = useTranslations()
 
   const form = useForm<SearchFormData>({
@@ -29,7 +32,17 @@ const SearchFormBlockComponent: FC<Readonly<IProps>> = (props) => {
   })
 
   const onSubmit = (data: SearchFormData) => {
-    onSearch(data.query)
+    const params = new URLSearchParams(searchParams.toString())
+
+    if (data.query.trim()) {
+      params.set('search', data.query.trim())
+    } else {
+      params.delete('search')
+    }
+
+    const queryString = params.toString()
+    const newPath = queryString ? `/?${queryString}` : '/'
+    router.push(newPath)
   }
 
   // return
