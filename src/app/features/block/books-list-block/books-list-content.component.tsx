@@ -2,8 +2,7 @@
 
 import { type FC } from 'react'
 
-import { booksQueryKeys, useBooksQuery } from '@/app/entities/api/books/books.query'
-import { booksQueryApi } from '@/app/entities/api/books/books.api'
+import { useBooksQuery } from '@/app/entities/api/books/books.query'
 import { type IBook } from '@/app/entities/models/book.model'
 import { useFavoritesQuery, useToggleFavoriteMutation } from '@/app/entities/api/favorites/favorites.query'
 import { useUserQuery } from '@/app/entities/api/user/user.query'

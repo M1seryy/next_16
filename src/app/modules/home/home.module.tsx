@@ -4,7 +4,7 @@ import { type FC, Suspense, useState } from 'react'
 import { useTranslations } from 'next-intl'
 
 import { BooksListBlockComponent, SearchFormBlockComponent } from '@/app/features/block'
-import { BannerComponent, CardSkeletonComponent } from '@/app/shared/ui'
+import { BannerComponent } from '@/app/shared/ui'
 
 // interface
 interface IProps {
@@ -38,21 +38,7 @@ const HomeModule: FC<Readonly<IProps>> = (props) => {
         <SearchFormBlockComponent onSearch={handleSearch} initialValue={searchQuery} />
       </div>
 
-      <Suspense
-        key={`books-${searchQuery}`}
-        fallback={
-          <div className='space-y-4'>
-            <h2 className='text-xl font-semibold'>Books from Database</h2>
-            <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
-              {Array.from({ length: 6 }).map((_, i) => (
-                <CardSkeletonComponent key={i} />
-              ))}
-            </div>
-          </div>
-        }
-      >
-        <BooksListBlockComponent searchQuery={searchQuery} />
-      </Suspense>
+      <BooksListBlockComponent searchQuery={searchQuery} />
     </div>
   )
 }
