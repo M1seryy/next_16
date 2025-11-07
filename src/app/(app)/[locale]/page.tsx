@@ -1,9 +1,9 @@
 import { type FC } from 'react'
-import { headers } from 'next/headers'
 import { dehydrate, HydrationBoundary } from '@tanstack/react-query'
 
 import { HomeModule } from '@/app/modules/home'
 import { booksQueryApi } from '@/app/entities/api/books/books.api'
+import { booksQueryKeys } from '@/app/entities/api/books/books.query'
 import { fetchFavorites } from '@/app/entities/api/favorites/favorites.api'
 import { getQueryClient } from '@/pkg/libraries/rest-api/service'
 

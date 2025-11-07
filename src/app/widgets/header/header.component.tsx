@@ -1,5 +1,4 @@
 'use client'
-'use cache'
 
 import { type FC } from 'react'
 import { useTranslations } from 'next-intl'
