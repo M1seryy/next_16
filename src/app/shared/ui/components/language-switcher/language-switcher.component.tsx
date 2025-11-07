@@ -2,8 +2,8 @@
 
 import { type FC } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
-import { usePathname, useRouter } from 'next/navigation'
 
+import { usePathname, useRouter } from '@/pkg/libraries/locale/navigation'
 import { Button } from '@/app/shared/ui'
 
 // interface
@@ -18,8 +18,7 @@ const LanguageSwitcherComponent: FC<Readonly<IProps>> = () => {
 
   const switchLanguage = (newLocale: string) => {
     const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/'
-
-    router.push(`/${newLocale}${pathWithoutLocale}`)
+    router.push(pathWithoutLocale, { locale: newLocale })
   }
 
   return (

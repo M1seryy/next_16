@@ -1,8 +1,8 @@
-'use client'
-
-import { type FC } from 'react'
+import { type FC, Suspense } from 'react'
+import { getTranslations } from 'next-intl/server'
 
 import SlugBlockComponent from '@/app/features/block/slug-block/slug-block'
+import { CardLoaderComponent } from '@/app/shared/ui'
 
 // interface
 interface IProps {
@@ -10,18 +10,22 @@ interface IProps {
 }
 
 // component
-const SlugModule: FC<Readonly<IProps>> = (props) => {
+const SlugModule: FC<Readonly<IProps>> = async (props) => {
   const { id } = props
+
+  const t = await getTranslations()
 
   // return
   return (
     <div className='space-y-6'>
       <div>
-        <h1 className='text-2xl font-bold'>Book Detail</h1>
-        <p>Here you can see details for the selected book.</p>
+        <h1 className='text-2xl font-bold'>{t('BookDetail.title')}</h1>
+        <p>{t('BookDetail.subtitle')}</p>
       </div>
 
-      <SlugBlockComponent id={id} />
+      <Suspense fallback={<CardLoaderComponent message='Loading book...' />}>
+        <SlugBlockComponent id={id} />
+      </Suspense>
     </div>
   )
 }

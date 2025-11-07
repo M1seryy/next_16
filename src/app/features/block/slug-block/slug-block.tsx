@@ -1,17 +1,11 @@
 'use client'
 
 import { type FC } from 'react'
+import { useSuspenseQuery } from '@tanstack/react-query'
 
-import { useSlugQuery } from '@/app/entities/api/books/slug.query'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardErrorComponent,
-  CardHeader,
-  CardLoaderComponent,
-  CardTitle,
-} from '@/app/shared/ui'
+import { booksQueryKeys } from '@/app/entities/api/books/slug.query'
+import { slugBookQueryApi } from '@/app/entities/api/books/slug.api'
+import { Card, CardContent, CardDescription, CardErrorComponent, CardHeader, CardTitle } from '@/app/shared/ui'
 
 // interface
 interface IProps {
@@ -22,15 +16,14 @@ interface IProps {
 const SlugBlockComponent: FC<Readonly<IProps>> = (props) => {
   const { id } = props
 
-  const { data: book, isLoading, error } = useSlugQuery(id)
-
-  if (isLoading) {
-    return <CardLoaderComponent message='Loading book...' />
+  if (!id || !Number.isFinite(id) || id <= 0) {
+    return <CardErrorComponent message='Invalid book ID' />
   }
 
-  if (error) {
-    return <CardErrorComponent message='Error loading book' />
-  }
+  const { data: book } = useSuspenseQuery({
+    queryKey: booksQueryKeys.search(id),
+    queryFn: (opt) => slugBookQueryApi(opt, { id }),
+  })
 
   if (!book) {
     return (

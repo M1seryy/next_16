@@ -58,5 +58,9 @@
       "title": "Better Auth",
       "description": "Modern authentication solution"
     }
+  },
+  "BookDetail": {
+    "title": "Book Detail",
+    "subtitle": "Here you can see details for the selected book."
   }
 }
