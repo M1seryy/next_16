@@ -1,6 +1,6 @@
 'use client'
 
-import { type FC } from 'react'
+import { type FC, useState } from 'react'
 
 import { useBooksQuery } from '@/app/entities/api/books/books.query'
 import { type IBook } from '@/app/entities/models/book.model'
@@ -23,7 +23,9 @@ const BooksListContentComponent: FC<Readonly<IProps>> = (props) => {
   const { data: books } = useBooksQuery(searchQuery)
 
   const { data: favorites } = useFavoritesQuery({ enabled: !!user, userId: user?.id })
-  const toggleFavorite = useToggleFavoriteMutation()
+  const toggleFavorite = useToggleFavoriteMutation(user?.id)
+
+  const [loadingBookId, setLoadingBookId] = useState<number | null>(null)
 
   const favoritesList = Array.isArray(favorites) ? favorites : []
 
@@ -38,24 +40,36 @@ const BooksListContentComponent: FC<Readonly<IProps>> = (props) => {
   // return
   return (
     <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
-      {books.map((book: IBook) => (
-        <CustomCardComponent
-          key={book.id}
-          title={book.title}
-          author={book.author}
-          publishedYear={book.publishedYear}
-          description={book.description}
-          href={`/${book.id}`}
-          isFavorite={favoritesList.some((f) => Number(f.id) === Number(book.id))}
-          onToggle={() =>
-            toggleFavorite.mutate({
-              bookId: book.id,
-              isFavorite: favoritesList.some((f) => Number(f.id) === Number(book.id)),
-            })
-          }
-          loading={toggleFavorite.isPending}
-        />
-      ))}
+      {books.map((book: IBook) => {
+        const isFavorite = favoritesList.some((f) => Number(f.id) === Number(book.id))
+
+        return (
+          <CustomCardComponent
+            key={book.id}
+            title={book.title}
+            author={book.author}
+            publishedYear={book.publishedYear}
+            description={book.description}
+            href={`/${book.id}`}
+            isFavorite={isFavorite}
+            onToggle={() => {
+              setLoadingBookId(book.id)
+              toggleFavorite.mutate(
+                {
+                  bookId: book.id,
+                  isFavorite,
+                },
+                {
+                  onSettled: () => {
+                    setLoadingBookId(null)
+                  },
+                },
+              )
+            }}
+            loading={loadingBookId === book.id && toggleFavorite.isPending}
+          />
+        )
+      })}
     </div>
   )
 }

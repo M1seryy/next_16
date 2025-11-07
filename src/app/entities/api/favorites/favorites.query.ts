@@ -16,7 +16,7 @@ export function useFavoritesQuery(options?: { enabled?: boolean; userId?: string
     })
 }
 
-export function useToggleFavoriteMutation() {
+export function useToggleFavoriteMutation(userId?: string) {
     const queryClient = useQueryClient()
     return useMutation({
         mutationFn: async (payload: { bookId: number; isFavorite: boolean }) => {
@@ -24,19 +24,24 @@ export function useToggleFavoriteMutation() {
             return addFavorite(payload.bookId)
         },
         onMutate: async (payload: { bookId: number; isFavorite: boolean }) => {
-            await queryClient.cancelQueries({ queryKey: favoritesKeys.all })
-            const previous = queryClient.getQueryData<FavoriteBook[]>(favoritesKeys.all) ?? []
+            const queryKey = favoritesKeys.byUser(userId)
+            await queryClient.cancelQueries({ queryKey })
+            const previous = queryClient.getQueryData<FavoriteBook[]>(queryKey) ?? []
             const optimistic = payload.isFavorite
-                ? previous.filter((b) => b.id !== payload.bookId)
+                ? previous.filter((b) => Number(b.id) !== Number(payload.bookId))
                 : [...previous, { id: payload.bookId } as FavoriteBook]
-            queryClient.setQueryData(favoritesKeys.all, optimistic)
-            return { previous }
+            queryClient.setQueryData(queryKey, optimistic)
+            return { previous, queryKey }
         },
         onError: (_err, _vars, ctx) => {
-            if (ctx?.previous) queryClient.setQueryData(favoritesKeys.all, ctx.previous)
+            if (ctx?.previous && ctx?.queryKey) {
+                queryClient.setQueryData(ctx.queryKey, ctx.previous)
+            }
         },
-        onSuccess: () => {
-            queryClient.invalidateQueries({ queryKey: favoritesKeys.all })
+        onSettled: () => {
+            if (userId) {
+                queryClient.invalidateQueries({ queryKey: favoritesKeys.byUser(userId) })
+            }
         },
     })
 }
