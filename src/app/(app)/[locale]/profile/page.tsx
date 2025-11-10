@@ -3,6 +3,9 @@ import { ProfileModule } from '@/app/modules/profile'
 import { dehydrate, HydrationBoundary } from '@tanstack/react-query'
 import { userQueryApi, userQueryKeys } from '@/app/entities/api/user'
 import { getQueryClient } from '@/pkg/libraries/rest-api/service'
+import { auth } from '@/pkg/integrations/better-auth/auth.config'
+import { headers } from 'next/headers'
+import { redirect } from 'next/navigation'
 
 // interface
 interface IProps {}
@@ -15,6 +18,12 @@ const ProfilePage: FC<Readonly<IProps>> = async (props) => {
     queryKey: userQueryKeys.current(),
     queryFn: userQueryApi,
   })
+
+  const session = await auth.api.getSession({ headers: await headers() })
+
+  if (!session) {
+    return redirect('/signin')
+  }
   // return
   return (
     <div>
